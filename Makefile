@@ -5,12 +5,10 @@ get-tools:
 			gperf libtool patchutils bc zlib1g-dev git libexpat1-dev
 
 build-tools: 
-	sudo mkdir /opt/riscv32i
-	sudo chown $USER /opt/riscv32i
-	sudo tar -zxvf riscv-gnu-toolchain-rv32i.tar.gz
-	cd riscv-gnu-toolchain-rv32i
+	sudo tar -zxvf riscv-gnu-toolchain-riscv32i.tar.gz
+	cd riscv-gnu-toolchain-riscv32i
+	./configure --with-arch=rv32i --prefix=/opt/riscv32i
 	mkdir build; cd build
-	../configure --with-arch=rv32i --prefix=/opt/riscv32i
 	make -j$(nproc)
 	cd RISC-V/firmware
 	gcc -Wall rom2mif -o rom2mif
