@@ -7,6 +7,7 @@ get-tools:
 build-tools:
 	sudo mkdir /opt/riscv32i
 	sudo chown $USER /opt/riscv32i
+	tar -zxvf riscv-gnu-toolchain-rv32i.tar.gz
 	cd riscv-gnu-toolchain-rv32i
 	mkdir build; cd build
 	../configure --with-arch=rv32i --prefix=/opt/riscv32i
