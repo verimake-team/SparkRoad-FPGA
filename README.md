@@ -22,6 +22,7 @@ RISC-V GNU toolchain and libraries for a pure RV32I target, and install it in `/
 	sudo mkdir /opt/riscv32i
 	sudo chown $USER /opt/riscv32i
 	make get-tools
+	make config
+	../configure --with-arch=rv32i --prefix=/opt/riscv32i
 	make build-tools
-	
 	

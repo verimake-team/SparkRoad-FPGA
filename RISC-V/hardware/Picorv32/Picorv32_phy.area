@@ -1,0 +1,45 @@
+standard
+IO Statistics
+#IO                    14
+  #input                3
+  #output              11
+  #inout                0
+
+Utilization Statistics
+#lut                 2964   out of  19600   15.12%
+#reg                  701   out of  19600    3.58%
+#le                  3024
+  #lut only          2323   out of   3024   76.82%
+  #reg only            60   out of   3024    1.98%
+  #lut&reg            641   out of   3024   21.20%
+#dsp                    0   out of     29    0.00%
+#bram                   4   out of     64    6.25%
+  #bram9k               4
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   14   out of    121   11.57%
+  #ireg                 0
+  #oreg                 9
+  #treg                 0
+#pll                    0   out of      4    0.00%
+#clknet                 1   out of     16    6.25%
+  #gclk                 0
+
+
+Detailed IO Report
+
+Name            Direction     Location     IOStandard     DriveStrength     
+clk             INPUT         P34          LVCMOS25       N/A               
+resetn_i        INPUT         P16          LVCMOS25       N/A               
+rxd             INPUT         P13          LVCMOS25       N/A               
+out_byte[7]     OUTPUT        P23          LVCMOS25       8                 
+out_byte[6]     OUTPUT        P19          LVCMOS25       8                 
+out_byte[5]     OUTPUT        P17          LVCMOS25       8                 
+out_byte[4]     OUTPUT        P2           LVCMOS25       8                 
+out_byte[3]     OUTPUT        P3           LVCMOS25       8                 
+out_byte[2]     OUTPUT        P4           LVCMOS25       8                 
+out_byte[1]     OUTPUT        P5           LVCMOS25       8                 
+out_byte[0]     OUTPUT        P10          LVCMOS25       8                 
+out_byte_en     OUTPUT        P11          LVCMOS25       8                 
+trap            OUTPUT        P12          LVCMOS25       8                 
+txd             OUTPUT        P14          LVCMOS25       8                 

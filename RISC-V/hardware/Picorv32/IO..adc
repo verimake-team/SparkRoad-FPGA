@@ -1,0 +1,14 @@
+set_pin_assignment {clk} { LOCATION = P34;  }
+set_pin_assignment {out_byte[7]} { LOCATION = P23;  }
+set_pin_assignment {out_byte[6]} { LOCATION = P19;  }
+set_pin_assignment {out_byte[5]} { LOCATION = P17;  }
+set_pin_assignment {out_byte[4]} { LOCATION = P2;  }
+set_pin_assignment {out_byte[3]} { LOCATION = P3;  }
+set_pin_assignment {out_byte[2]} { LOCATION = P4;  }
+set_pin_assignment {out_byte[1]} { LOCATION = P5;  }
+set_pin_assignment {out_byte[0]} { LOCATION = P10;  }
+set_pin_assignment {out_byte_en} { LOCATION = P11;  }
+set_pin_assignment {resetn_i} { LOCATION = P16;  }
+set_pin_assignment {rxd} { LOCATION = P13;  }
+set_pin_assignment {trap} { LOCATION = P12;  }
+set_pin_assignment {txd} { LOCATION = P14;  }
