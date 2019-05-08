@@ -17,7 +17,7 @@ For well-known reasons, we provide a mirror of toolchain for a pure `rv32i` here
 If you have compiled a complete [toolchain for riscv](https://github.com/riscv/riscv-tools) 
 Please skip the following commands.	
 Make sure the mirror above is in the directory `/SparkRoad-FPGA`.Then the following commands will build the 
-RISC-V GNU toolchain and libraries for a pure RV32I target, and install it in `opt/riscv32i`:
+RISC-V GNU toolchain and libraries for a pure RV32I target, and install it in `/opt/riscv32i`:
 	
 	make get-tools
 	make build-tools
