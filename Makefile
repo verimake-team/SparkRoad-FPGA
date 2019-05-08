@@ -11,3 +11,6 @@ build-tools:
 	mkdir build; cd build
 	../configure --with-arch=rv32i --prefix=/opt/riscv32i
 	make -j$(nproc)
+	cd RISC-V/firmware
+	gcc -Wall rom2mif -o rom2mif
+	cp rom2mif /opt/riscv32i/bin
