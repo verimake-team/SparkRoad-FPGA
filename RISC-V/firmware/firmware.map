@@ -1,0 +1,45 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD C:\Users\SALIER~1\AppData\Local\Temp\ccZyLWMX.o
+LOAD C:\Users\SALIER~1\AppData\Local\Temp\ccBoWGwd.o
+
+.memory         0x0000000000000000      0x284
+                0x0000000000000004                . = 0x4
+ *fill*         0x0000000000000000        0x4 
+ *(.init)
+ .init          0x0000000000000004        0xe C:\Users\SALIER~1\AppData\Local\Temp\ccZyLWMX.o
+ *(.text)
+ .text          0x0000000000000012        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccZyLWMX.o
+ .text          0x0000000000000012      0x17e C:\Users\SALIER~1\AppData\Local\Temp\ccBoWGwd.o
+                0x0000000000000012                putc
+                0x0000000000000024                getc
+                0x000000000000003e                puts
+                0x000000000000005a                memcpy
+                0x0000000000000074                memcmp
+                0x0000000000000096                print_version
+                0x00000000000000b8                printhex
+                0x00000000000000ea                printcrlf
+                0x00000000000000fa                dump_memory
+ *(*)
+ .data          0x0000000000000190        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccZyLWMX.o
+ .bss           0x0000000000000190        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccZyLWMX.o
+ .rela.init     0x0000000000000190        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccZyLWMX.o
+ .data          0x0000000000000190        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccBoWGwd.o
+ .bss           0x0000000000000190        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccBoWGwd.o
+ .text.startup  0x0000000000000190       0x36 C:\Users\SALIER~1\AppData\Local\Temp\ccBoWGwd.o
+                0x0000000000000190                main
+ *fill*         0x00000000000001c6        0x2 
+ .rodata        0x00000000000001c8       0xaa C:\Users\SALIER~1\AppData\Local\Temp\ccBoWGwd.o
+ .comment       0x0000000000000272       0x11 C:\Users\SALIER~1\AppData\Local\Temp\ccBoWGwd.o
+                                         0x12 (size before relaxing)
+                0x0000000000000284                . = ALIGN (0x4)
+ *fill*         0x0000000000000283        0x1 
+                0x0000000000000284                end = .
+LOAD c:/program files (x86)/rv32imc/bin/../lib/gcc/riscv32-unknown-elf/6.1.0\libgcc.a
+OUTPUT(firmware.elf elf32-littleriscv)
