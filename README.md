@@ -28,6 +28,9 @@ RISC-V GNU toolchain and libraries for a pure RV32I target, and install it in `/
 	../configure --with-arch=rv32i --prefix=/opt/riscv32i
 	make -j$(nproc)
 	cd ../../RISC-V/firmware
-	gcc -Wall rom2mif -o rom2mif
+	gcc -Wall rom2mif.c -o rom2mif
 	sudo mv rom2mif /opt/riscv32i/bin
-	
+export PATH
+You can input the following at the end of profile use `vi /etc/profile` .
+	export PATH="$PATH:/opt/riscv32i/bin"
+Then log out and reload your ubuntu.
