@@ -22,7 +22,12 @@ RISC-V GNU toolchain and libraries for a pure RV32I target, and install it in `/
 	sudo mkdir /opt/riscv32i
 	sudo chown $USER /opt/riscv32i
 	make get-tools
-	make config
+	sudo tar -zxvf riscv-gnu-toolchain-rv32i.tar.gz
+	sudo chown $USER riscv-gnu-toolchain-rv32i
+	cd riscv-gnu-toolchain-rv32i; mkdir build; cd build
 	../configure --with-arch=rv32i --prefix=/opt/riscv32i
-	make build-tools
+	make -j$(nproc)
+	cd ../../RISC-V/firmware
+	gcc -Wall rom2mif -o rom2mif
+	sudo mv rom2mif /opt/riscv32i/bin
 	
