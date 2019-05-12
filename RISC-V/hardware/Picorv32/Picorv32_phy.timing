@@ -1,0 +1,1029 @@
+=========================================================================================================
+Auto created by the td v4.3.815
+@Copy Right: Shanghai Anlogic Infotech, 2011 - 2021.
+Wed May  8 20:28:41 2019
+=========================================================================================================
+
+
+Top Model:                system                                                          
+Device:                   eagle_s20                                                       
+Timing Constraint File:   picorv32_demo.sdc                                               
+STA Level:                Detail                                                          
+Process parameter::       TT  1.10v  85C                                                  
+
+=========================================================================================================
+Timing constraint:        clock: clk                                                      
+Clock = clk, period 10ns, rising at 0ns, falling at 5ns
+
+2890 endpoints analyzed totally, and 147073498 paths analyzed
+320 errors detected : 320 setup errors (TNS = -1560.441), 0 hold errors (TNS = 0.000)
+Minimum period is 18.087ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point picorv32_core/reg0_b20|picorv32_core/reg0_b21.F (1222043 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -8.087 ns                                                        
+ StartPoint:              _al_u1217|picorv32_core/mem_do_rinst_reg.clk (rising edge triggered by clock clk)
+ EndPoint:                picorv32_core/reg0_b20|picorv32_core/reg0_b21.e[0] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u1217|picorv32_core/mem_do_rinst_reg.clk                clock                   3.791
+ _al_u1217|picorv32_core/mem_do_rinst_reg.q[0]               cell                    0.146
+ _al_u1090|_al_u700_placeOpt_2.a[0] (picorv32_core/mem_do_rinst) net (fanout = 33)       0.905 ../src/picorv32.v(321)
+ _al_u1090|_al_u700_placeOpt_2.f[0]                          cell                    0.371
+ _al_u1088|picorv32_core/reg17_b1.d[1] (_al_u700_o_placeOpt_2) net (fanout = 11)       0.596               
+ _al_u1088|picorv32_core/reg17_b1.f[1]                       cell                    0.238
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1] (_al_u1088_o) net (fanout = 90)       0.474               
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.f[1] cell                    0.186
+ _al_u1090|_al_u700.c[1] (_al_u1089_o)                       net (fanout = 60)       0.715               
+ _al_u1090|_al_u700.f[1]                                     cell                    0.228
+ _al_u1295|_al_u1115.b[0] (picorv32_core/mem_xfer)           net (fanout = 19)       0.713 ../src/picorv32.v(337)
+ _al_u1295|_al_u1115.f[0]                                    cell                    0.392
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1] (picorv32_core/mem_la_firstword_xfer) net (fanout = 3)        1.071 ../src/picorv32.v(327)
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.fco           cell                    0.490
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fci (picorv32_core/add0/c1) net (fanout = 1)        0.000               
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fco             cell                    0.066
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fci (picorv32_core/add0/c3) net (fanout = 1)        0.000               
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fco             cell                    0.066
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fci (picorv32_core/add0/c5) net (fanout = 1)        0.000               
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fco             cell                    0.066
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fci (picorv32_core/add0/c7) net (fanout = 1)        0.000               
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fco             cell                    0.066
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fci (picorv32_core/add0/c9) net (fanout = 1)        0.000               
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fco            cell                    0.066
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fci (picorv32_core/add0/c11) net (fanout = 1)        0.000               
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fco           cell                    0.066
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fci (picorv32_core/add0/c13) net (fanout = 1)        0.000               
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fco           cell                    0.066
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fci (picorv32_core/add0/c15) net (fanout = 1)        0.000               
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fco           cell                    0.066
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fci (picorv32_core/add0/c17) net (fanout = 1)        0.000               
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fco           cell                    0.066
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fci (picorv32_core/add0/c19) net (fanout = 1)        0.000               
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fco           cell                    0.066
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fci (picorv32_core/add0/c21) net (fanout = 1)        0.000               
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fco           cell                    0.066
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fci (picorv32_core/add0/c23) net (fanout = 1)        0.000               
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fco           cell                    0.066
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fci (picorv32_core/add0/c25) net (fanout = 1)        0.000               
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fco           cell                    0.066
+ picorv32_core/add0/u28|picorv32_core/add0/u27.fci (picorv32_core/add0/c27) net (fanout = 1)        0.000               
+ picorv32_core/add0/u28|picorv32_core/add0/u27.f[0]          cell                    0.131
+ _al_u1131.a[0] (picorv32_core/n30[27])                      net (fanout = 2)        0.425               
+ _al_u1131.fx[0]                                             cell                    0.562
+ _al_u1129|_al_u1168.d[0] (eq1/or_xor_i0$17$_i1$17$_o_lutinv) net (fanout = 7)        0.614               
+ _al_u1129|_al_u1168.f[0]                                    cell                    0.238
+ _al_u1254|_al_u1255_placeOpt_3.d[0] (_al_u1168_o)           net (fanout = 18)       1.024               
+ _al_u1254|_al_u1255_placeOpt_3.f[0]                         cell                    0.238
+ _al_u1283|picorv32_core/prefetched_high_word_reg.d[1] (uart_sel_lutinv_placeOpt_3) net (fanout = 23)       0.843               
+ _al_u1283|picorv32_core/prefetched_high_word_reg.f[1]       cell                    0.238
+ picorv32_core/reg0_b0_placeOpt_5.a[0] (picorv32_core/mem_rdata_latched_noshuffle[0]_lutinv) net (fanout = 13)       0.818 ../src/picorv32.v(333)
+ picorv32_core/reg0_b0_placeOpt_5.fx[0]                      cell                    0.562
+ _al_u1546.c[0] (picorv32_core/mem_rdata_latched$0$_placeOpt_5) net (fanout = 18)       0.711               
+ _al_u1546.fx[0]                                             cell                    0.407
+ _al_u2273|_al_u2460.b[1] (_al_u1546_o)                      net (fanout = 17)       0.573               
+ _al_u2273|_al_u2460.f[1]                                    cell                    0.392
+ _al_u2276|_al_u2269.c[1] (_al_u2273_o)                      net (fanout = 8)        1.645               
+ _al_u2276|_al_u2269.f[1]                                    cell                    0.316
+ picorv32_core/reg0_b20|picorv32_core/reg0_b21.e[0] (_al_u2276_o) net (fanout = 1)        0.644 ../src/picorv32.v(319)
+ Arrival time                                                                       21.555 (16 lvl)
+                                                                                          (46% logic, 54% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                   13.468
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -8.087 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -8.087 ns                                                        
+ StartPoint:              _al_u1217|picorv32_core/mem_do_rinst_reg.clk (rising edge triggered by clock clk)
+ EndPoint:                picorv32_core/reg0_b20|picorv32_core/reg0_b21.e[0] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u1217|picorv32_core/mem_do_rinst_reg.clk                clock                   3.791
+ _al_u1217|picorv32_core/mem_do_rinst_reg.q[0]               cell                    0.146
+ _al_u1090|_al_u700_placeOpt_2.a[0] (picorv32_core/mem_do_rinst) net (fanout = 33)       0.905 ../src/picorv32.v(321)
+ _al_u1090|_al_u700_placeOpt_2.f[0]                          cell                    0.371
+ _al_u1088|picorv32_core/reg17_b1.d[1] (_al_u700_o_placeOpt_2) net (fanout = 11)       0.596               
+ _al_u1088|picorv32_core/reg17_b1.f[1]                       cell                    0.238
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1] (_al_u1088_o) net (fanout = 90)       0.474               
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.f[1] cell                    0.186
+ _al_u1090|_al_u700.c[1] (_al_u1089_o)                       net (fanout = 60)       0.715               
+ _al_u1090|_al_u700.f[1]                                     cell                    0.228
+ _al_u1295|_al_u1115.b[0] (picorv32_core/mem_xfer)           net (fanout = 19)       0.713 ../src/picorv32.v(337)
+ _al_u1295|_al_u1115.f[0]                                    cell                    0.392
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1] (picorv32_core/mem_la_firstword_xfer) net (fanout = 3)        1.071 ../src/picorv32.v(327)
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.fco           cell                    0.490
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fci (picorv32_core/add0/c1) net (fanout = 1)        0.000               
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fco             cell                    0.066
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fci (picorv32_core/add0/c3) net (fanout = 1)        0.000               
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fco             cell                    0.066
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fci (picorv32_core/add0/c5) net (fanout = 1)        0.000               
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fco             cell                    0.066
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fci (picorv32_core/add0/c7) net (fanout = 1)        0.000               
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fco             cell                    0.066
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fci (picorv32_core/add0/c9) net (fanout = 1)        0.000               
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fco            cell                    0.066
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fci (picorv32_core/add0/c11) net (fanout = 1)        0.000               
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fco           cell                    0.066
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fci (picorv32_core/add0/c13) net (fanout = 1)        0.000               
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fco           cell                    0.066
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fci (picorv32_core/add0/c15) net (fanout = 1)        0.000               
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fco           cell                    0.066
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fci (picorv32_core/add0/c17) net (fanout = 1)        0.000               
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fco           cell                    0.066
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fci (picorv32_core/add0/c19) net (fanout = 1)        0.000               
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fco           cell                    0.066
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fci (picorv32_core/add0/c21) net (fanout = 1)        0.000               
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fco           cell                    0.066
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fci (picorv32_core/add0/c23) net (fanout = 1)        0.000               
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fco           cell                    0.066
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fci (picorv32_core/add0/c25) net (fanout = 1)        0.000               
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fco           cell                    0.066
+ picorv32_core/add0/u28|picorv32_core/add0/u27.fci (picorv32_core/add0/c27) net (fanout = 1)        0.000               
+ picorv32_core/add0/u28|picorv32_core/add0/u27.f[0]          cell                    0.131
+ _al_u1131.a[0] (picorv32_core/n30[27])                      net (fanout = 2)        0.425               
+ _al_u1131.fx[0]                                             cell                    0.562
+ _al_u1129|_al_u1168.d[0] (eq1/or_xor_i0$17$_i1$17$_o_lutinv) net (fanout = 7)        0.614               
+ _al_u1129|_al_u1168.f[0]                                    cell                    0.238
+ _al_u1254|_al_u1255_placeOpt_3.d[0] (_al_u1168_o)           net (fanout = 18)       1.024               
+ _al_u1254|_al_u1255_placeOpt_3.f[0]                         cell                    0.238
+ _al_u1283|picorv32_core/prefetched_high_word_reg.d[1] (uart_sel_lutinv_placeOpt_3) net (fanout = 23)       0.843               
+ _al_u1283|picorv32_core/prefetched_high_word_reg.f[1]       cell                    0.238
+ picorv32_core/reg0_b0_placeOpt_5.a[0] (picorv32_core/mem_rdata_latched_noshuffle[0]_lutinv) net (fanout = 13)       0.818 ../src/picorv32.v(333)
+ picorv32_core/reg0_b0_placeOpt_5.fx[0]                      cell                    0.562
+ _al_u1546.c[1] (picorv32_core/mem_rdata_latched$0$_placeOpt_5) net (fanout = 18)       0.711               
+ _al_u1546.fx[0]                                             cell                    0.407
+ _al_u2273|_al_u2460.b[1] (_al_u1546_o)                      net (fanout = 17)       0.573               
+ _al_u2273|_al_u2460.f[1]                                    cell                    0.392
+ _al_u2276|_al_u2269.c[1] (_al_u2273_o)                      net (fanout = 8)        1.645               
+ _al_u2276|_al_u2269.f[1]                                    cell                    0.316
+ picorv32_core/reg0_b20|picorv32_core/reg0_b21.e[0] (_al_u2276_o) net (fanout = 1)        0.644 ../src/picorv32.v(319)
+ Arrival time                                                                       21.555 (16 lvl)
+                                                                                          (46% logic, 54% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                   13.468
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -8.087 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -8.087 ns                                                        
+ StartPoint:              _al_u1217|picorv32_core/mem_do_rinst_reg.clk (rising edge triggered by clock clk)
+ EndPoint:                picorv32_core/reg0_b20|picorv32_core/reg0_b21.e[0] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u1217|picorv32_core/mem_do_rinst_reg.clk                clock                   3.791
+ _al_u1217|picorv32_core/mem_do_rinst_reg.q[0]               cell                    0.146
+ _al_u1090|_al_u700_placeOpt_2.a[0] (picorv32_core/mem_do_rinst) net (fanout = 33)       0.905 ../src/picorv32.v(321)
+ _al_u1090|_al_u700_placeOpt_2.f[0]                          cell                    0.371
+ _al_u1088|picorv32_core/reg17_b1.d[1] (_al_u700_o_placeOpt_2) net (fanout = 11)       0.596               
+ _al_u1088|picorv32_core/reg17_b1.f[1]                       cell                    0.238
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1] (_al_u1088_o) net (fanout = 90)       0.474               
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.f[1] cell                    0.186
+ _al_u1090|_al_u700.c[1] (_al_u1089_o)                       net (fanout = 60)       0.715               
+ _al_u1090|_al_u700.f[1]                                     cell                    0.228
+ _al_u1295|_al_u1115.b[0] (picorv32_core/mem_xfer)           net (fanout = 19)       0.713 ../src/picorv32.v(337)
+ _al_u1295|_al_u1115.f[0]                                    cell                    0.392
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1] (picorv32_core/mem_la_firstword_xfer) net (fanout = 3)        1.071 ../src/picorv32.v(327)
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.fco           cell                    0.490
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fci (picorv32_core/add0/c1) net (fanout = 1)        0.000               
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fco             cell                    0.066
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fci (picorv32_core/add0/c3) net (fanout = 1)        0.000               
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fco             cell                    0.066
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fci (picorv32_core/add0/c5) net (fanout = 1)        0.000               
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fco             cell                    0.066
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fci (picorv32_core/add0/c7) net (fanout = 1)        0.000               
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fco             cell                    0.066
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fci (picorv32_core/add0/c9) net (fanout = 1)        0.000               
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fco            cell                    0.066
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fci (picorv32_core/add0/c11) net (fanout = 1)        0.000               
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fco           cell                    0.066
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fci (picorv32_core/add0/c13) net (fanout = 1)        0.000               
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fco           cell                    0.066
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fci (picorv32_core/add0/c15) net (fanout = 1)        0.000               
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fco           cell                    0.066
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fci (picorv32_core/add0/c17) net (fanout = 1)        0.000               
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fco           cell                    0.066
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fci (picorv32_core/add0/c19) net (fanout = 1)        0.000               
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fco           cell                    0.066
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fci (picorv32_core/add0/c21) net (fanout = 1)        0.000               
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fco           cell                    0.066
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fci (picorv32_core/add0/c23) net (fanout = 1)        0.000               
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fco           cell                    0.066
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fci (picorv32_core/add0/c25) net (fanout = 1)        0.000               
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fco           cell                    0.066
+ picorv32_core/add0/u28|picorv32_core/add0/u27.fci (picorv32_core/add0/c27) net (fanout = 1)        0.000               
+ picorv32_core/add0/u28|picorv32_core/add0/u27.f[0]          cell                    0.131
+ _al_u1131.a[0] (picorv32_core/n30[27])                      net (fanout = 2)        0.425               
+ _al_u1131.fx[0]                                             cell                    0.562
+ _al_u1129|_al_u1168.d[0] (eq1/or_xor_i0$17$_i1$17$_o_lutinv) net (fanout = 7)        0.614               
+ _al_u1129|_al_u1168.f[0]                                    cell                    0.238
+ _al_u1254|_al_u1255_placeOpt_3.d[0] (_al_u1168_o)           net (fanout = 18)       1.024               
+ _al_u1254|_al_u1255_placeOpt_3.f[0]                         cell                    0.238
+ _al_u1283|picorv32_core/prefetched_high_word_reg.d[1] (uart_sel_lutinv_placeOpt_3) net (fanout = 23)       0.843               
+ _al_u1283|picorv32_core/prefetched_high_word_reg.f[1]       cell                    0.238
+ picorv32_core/reg0_b0_placeOpt_5.a[1] (picorv32_core/mem_rdata_latched_noshuffle[0]_lutinv) net (fanout = 13)       0.818 ../src/picorv32.v(333)
+ picorv32_core/reg0_b0_placeOpt_5.fx[0]                      cell                    0.562
+ _al_u1546.c[0] (picorv32_core/mem_rdata_latched$0$_placeOpt_5) net (fanout = 18)       0.711               
+ _al_u1546.fx[0]                                             cell                    0.407
+ _al_u2273|_al_u2460.b[1] (_al_u1546_o)                      net (fanout = 17)       0.573               
+ _al_u2273|_al_u2460.f[1]                                    cell                    0.392
+ _al_u2276|_al_u2269.c[1] (_al_u2273_o)                      net (fanout = 8)        1.645               
+ _al_u2276|_al_u2269.f[1]                                    cell                    0.316
+ picorv32_core/reg0_b20|picorv32_core/reg0_b21.e[0] (_al_u2276_o) net (fanout = 1)        0.644 ../src/picorv32.v(319)
+ Arrival time                                                                       21.555 (16 lvl)
+                                                                                          (46% logic, 54% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                   13.468
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -8.087 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point picorv32_core/reg0_b20|picorv32_core/reg0_b21.F (1222043 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -8.046 ns                                                        
+ StartPoint:              _al_u1217|picorv32_core/mem_do_rinst_reg.clk (rising edge triggered by clock clk)
+ EndPoint:                picorv32_core/reg0_b20|picorv32_core/reg0_b21.c[1] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u1217|picorv32_core/mem_do_rinst_reg.clk                clock                   3.791
+ _al_u1217|picorv32_core/mem_do_rinst_reg.q[0]               cell                    0.146
+ _al_u1090|_al_u700_placeOpt_2.a[0] (picorv32_core/mem_do_rinst) net (fanout = 33)       0.905 ../src/picorv32.v(321)
+ _al_u1090|_al_u700_placeOpt_2.f[0]                          cell                    0.371
+ _al_u1088|picorv32_core/reg17_b1.d[1] (_al_u700_o_placeOpt_2) net (fanout = 11)       0.596               
+ _al_u1088|picorv32_core/reg17_b1.f[1]                       cell                    0.238
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1] (_al_u1088_o) net (fanout = 90)       0.474               
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.f[1] cell                    0.186
+ _al_u1090|_al_u700.c[1] (_al_u1089_o)                       net (fanout = 60)       0.715               
+ _al_u1090|_al_u700.f[1]                                     cell                    0.228
+ _al_u1295|_al_u1115.b[0] (picorv32_core/mem_xfer)           net (fanout = 19)       0.713 ../src/picorv32.v(337)
+ _al_u1295|_al_u1115.f[0]                                    cell                    0.392
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1] (picorv32_core/mem_la_firstword_xfer) net (fanout = 3)        1.071 ../src/picorv32.v(327)
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.fco           cell                    0.490
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fci (picorv32_core/add0/c1) net (fanout = 1)        0.000               
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fco             cell                    0.066
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fci (picorv32_core/add0/c3) net (fanout = 1)        0.000               
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fco             cell                    0.066
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fci (picorv32_core/add0/c5) net (fanout = 1)        0.000               
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fco             cell                    0.066
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fci (picorv32_core/add0/c7) net (fanout = 1)        0.000               
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fco             cell                    0.066
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fci (picorv32_core/add0/c9) net (fanout = 1)        0.000               
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fco            cell                    0.066
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fci (picorv32_core/add0/c11) net (fanout = 1)        0.000               
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fco           cell                    0.066
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fci (picorv32_core/add0/c13) net (fanout = 1)        0.000               
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fco           cell                    0.066
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fci (picorv32_core/add0/c15) net (fanout = 1)        0.000               
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fco           cell                    0.066
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fci (picorv32_core/add0/c17) net (fanout = 1)        0.000               
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fco           cell                    0.066
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fci (picorv32_core/add0/c19) net (fanout = 1)        0.000               
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fco           cell                    0.066
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fci (picorv32_core/add0/c21) net (fanout = 1)        0.000               
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fco           cell                    0.066
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fci (picorv32_core/add0/c23) net (fanout = 1)        0.000               
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fco           cell                    0.066
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fci (picorv32_core/add0/c25) net (fanout = 1)        0.000               
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fco           cell                    0.066
+ picorv32_core/add0/u28|picorv32_core/add0/u27.fci (picorv32_core/add0/c27) net (fanout = 1)        0.000               
+ picorv32_core/add0/u28|picorv32_core/add0/u27.f[0]          cell                    0.131
+ _al_u1131.a[0] (picorv32_core/n30[27])                      net (fanout = 2)        0.425               
+ _al_u1131.fx[0]                                             cell                    0.562
+ _al_u1129|_al_u1168.d[0] (eq1/or_xor_i0$17$_i1$17$_o_lutinv) net (fanout = 7)        0.614               
+ _al_u1129|_al_u1168.f[0]                                    cell                    0.238
+ _al_u1254|_al_u1255_placeOpt_3.d[0] (_al_u1168_o)           net (fanout = 18)       1.024               
+ _al_u1254|_al_u1255_placeOpt_3.f[0]                         cell                    0.238
+ _al_u1283|picorv32_core/prefetched_high_word_reg.d[1] (uart_sel_lutinv_placeOpt_3) net (fanout = 23)       0.843               
+ _al_u1283|picorv32_core/prefetched_high_word_reg.f[1]       cell                    0.238
+ picorv32_core/reg0_b0_placeOpt_5.a[0] (picorv32_core/mem_rdata_latched_noshuffle[0]_lutinv) net (fanout = 13)       0.818 ../src/picorv32.v(333)
+ picorv32_core/reg0_b0_placeOpt_5.fx[0]                      cell                    0.562
+ _al_u1546.c[0] (picorv32_core/mem_rdata_latched$0$_placeOpt_5) net (fanout = 18)       0.711               
+ _al_u1546.fx[0]                                             cell                    0.407
+ _al_u2273|_al_u2460.b[1] (_al_u1546_o)                      net (fanout = 17)       0.573               
+ _al_u2273|_al_u2460.f[1]                                    cell                    0.392
+ _al_u2285|_al_u2282.c[1] (_al_u2273_o)                      net (fanout = 8)        1.544               
+ _al_u2285|_al_u2282.f[1]                                    cell                    0.316
+ picorv32_core/reg0_b20|picorv32_core/reg0_b21.c[1] (_al_u2285_o) net (fanout = 1)        0.704 ../src/picorv32.v(319)
+ Arrival time                                                                       21.514 (16 lvl)
+                                                                                          (46% logic, 54% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                   13.468
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -8.046 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -8.046 ns                                                        
+ StartPoint:              _al_u1217|picorv32_core/mem_do_rinst_reg.clk (rising edge triggered by clock clk)
+ EndPoint:                picorv32_core/reg0_b20|picorv32_core/reg0_b21.c[1] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u1217|picorv32_core/mem_do_rinst_reg.clk                clock                   3.791
+ _al_u1217|picorv32_core/mem_do_rinst_reg.q[0]               cell                    0.146
+ _al_u1090|_al_u700_placeOpt_2.a[0] (picorv32_core/mem_do_rinst) net (fanout = 33)       0.905 ../src/picorv32.v(321)
+ _al_u1090|_al_u700_placeOpt_2.f[0]                          cell                    0.371
+ _al_u1088|picorv32_core/reg17_b1.d[1] (_al_u700_o_placeOpt_2) net (fanout = 11)       0.596               
+ _al_u1088|picorv32_core/reg17_b1.f[1]                       cell                    0.238
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1] (_al_u1088_o) net (fanout = 90)       0.474               
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.f[1] cell                    0.186
+ _al_u1090|_al_u700.c[1] (_al_u1089_o)                       net (fanout = 60)       0.715               
+ _al_u1090|_al_u700.f[1]                                     cell                    0.228
+ _al_u1295|_al_u1115.b[0] (picorv32_core/mem_xfer)           net (fanout = 19)       0.713 ../src/picorv32.v(337)
+ _al_u1295|_al_u1115.f[0]                                    cell                    0.392
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1] (picorv32_core/mem_la_firstword_xfer) net (fanout = 3)        1.071 ../src/picorv32.v(327)
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.fco           cell                    0.490
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fci (picorv32_core/add0/c1) net (fanout = 1)        0.000               
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fco             cell                    0.066
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fci (picorv32_core/add0/c3) net (fanout = 1)        0.000               
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fco             cell                    0.066
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fci (picorv32_core/add0/c5) net (fanout = 1)        0.000               
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fco             cell                    0.066
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fci (picorv32_core/add0/c7) net (fanout = 1)        0.000               
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fco             cell                    0.066
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fci (picorv32_core/add0/c9) net (fanout = 1)        0.000               
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fco            cell                    0.066
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fci (picorv32_core/add0/c11) net (fanout = 1)        0.000               
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fco           cell                    0.066
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fci (picorv32_core/add0/c13) net (fanout = 1)        0.000               
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fco           cell                    0.066
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fci (picorv32_core/add0/c15) net (fanout = 1)        0.000               
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fco           cell                    0.066
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fci (picorv32_core/add0/c17) net (fanout = 1)        0.000               
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fco           cell                    0.066
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fci (picorv32_core/add0/c19) net (fanout = 1)        0.000               
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fco           cell                    0.066
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fci (picorv32_core/add0/c21) net (fanout = 1)        0.000               
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fco           cell                    0.066
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fci (picorv32_core/add0/c23) net (fanout = 1)        0.000               
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fco           cell                    0.066
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fci (picorv32_core/add0/c25) net (fanout = 1)        0.000               
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fco           cell                    0.066
+ picorv32_core/add0/u28|picorv32_core/add0/u27.fci (picorv32_core/add0/c27) net (fanout = 1)        0.000               
+ picorv32_core/add0/u28|picorv32_core/add0/u27.f[0]          cell                    0.131
+ _al_u1131.a[0] (picorv32_core/n30[27])                      net (fanout = 2)        0.425               
+ _al_u1131.fx[0]                                             cell                    0.562
+ _al_u1129|_al_u1168.d[0] (eq1/or_xor_i0$17$_i1$17$_o_lutinv) net (fanout = 7)        0.614               
+ _al_u1129|_al_u1168.f[0]                                    cell                    0.238
+ _al_u1254|_al_u1255_placeOpt_3.d[0] (_al_u1168_o)           net (fanout = 18)       1.024               
+ _al_u1254|_al_u1255_placeOpt_3.f[0]                         cell                    0.238
+ _al_u1283|picorv32_core/prefetched_high_word_reg.d[1] (uart_sel_lutinv_placeOpt_3) net (fanout = 23)       0.843               
+ _al_u1283|picorv32_core/prefetched_high_word_reg.f[1]       cell                    0.238
+ picorv32_core/reg0_b0_placeOpt_5.a[0] (picorv32_core/mem_rdata_latched_noshuffle[0]_lutinv) net (fanout = 13)       0.818 ../src/picorv32.v(333)
+ picorv32_core/reg0_b0_placeOpt_5.fx[0]                      cell                    0.562
+ _al_u1546.c[1] (picorv32_core/mem_rdata_latched$0$_placeOpt_5) net (fanout = 18)       0.711               
+ _al_u1546.fx[0]                                             cell                    0.407
+ _al_u2273|_al_u2460.b[1] (_al_u1546_o)                      net (fanout = 17)       0.573               
+ _al_u2273|_al_u2460.f[1]                                    cell                    0.392
+ _al_u2285|_al_u2282.c[1] (_al_u2273_o)                      net (fanout = 8)        1.544               
+ _al_u2285|_al_u2282.f[1]                                    cell                    0.316
+ picorv32_core/reg0_b20|picorv32_core/reg0_b21.c[1] (_al_u2285_o) net (fanout = 1)        0.704 ../src/picorv32.v(319)
+ Arrival time                                                                       21.514 (16 lvl)
+                                                                                          (46% logic, 54% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                   13.468
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -8.046 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -8.046 ns                                                        
+ StartPoint:              _al_u1217|picorv32_core/mem_do_rinst_reg.clk (rising edge triggered by clock clk)
+ EndPoint:                picorv32_core/reg0_b20|picorv32_core/reg0_b21.c[1] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u1217|picorv32_core/mem_do_rinst_reg.clk                clock                   3.791
+ _al_u1217|picorv32_core/mem_do_rinst_reg.q[0]               cell                    0.146
+ _al_u1090|_al_u700_placeOpt_2.a[0] (picorv32_core/mem_do_rinst) net (fanout = 33)       0.905 ../src/picorv32.v(321)
+ _al_u1090|_al_u700_placeOpt_2.f[0]                          cell                    0.371
+ _al_u1088|picorv32_core/reg17_b1.d[1] (_al_u700_o_placeOpt_2) net (fanout = 11)       0.596               
+ _al_u1088|picorv32_core/reg17_b1.f[1]                       cell                    0.238
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1] (_al_u1088_o) net (fanout = 90)       0.474               
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.f[1] cell                    0.186
+ _al_u1090|_al_u700.c[1] (_al_u1089_o)                       net (fanout = 60)       0.715               
+ _al_u1090|_al_u700.f[1]                                     cell                    0.228
+ _al_u1295|_al_u1115.b[0] (picorv32_core/mem_xfer)           net (fanout = 19)       0.713 ../src/picorv32.v(337)
+ _al_u1295|_al_u1115.f[0]                                    cell                    0.392
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1] (picorv32_core/mem_la_firstword_xfer) net (fanout = 3)        1.071 ../src/picorv32.v(327)
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.fco           cell                    0.490
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fci (picorv32_core/add0/c1) net (fanout = 1)        0.000               
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fco             cell                    0.066
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fci (picorv32_core/add0/c3) net (fanout = 1)        0.000               
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fco             cell                    0.066
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fci (picorv32_core/add0/c5) net (fanout = 1)        0.000               
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fco             cell                    0.066
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fci (picorv32_core/add0/c7) net (fanout = 1)        0.000               
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fco             cell                    0.066
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fci (picorv32_core/add0/c9) net (fanout = 1)        0.000               
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fco            cell                    0.066
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fci (picorv32_core/add0/c11) net (fanout = 1)        0.000               
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fco           cell                    0.066
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fci (picorv32_core/add0/c13) net (fanout = 1)        0.000               
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fco           cell                    0.066
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fci (picorv32_core/add0/c15) net (fanout = 1)        0.000               
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fco           cell                    0.066
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fci (picorv32_core/add0/c17) net (fanout = 1)        0.000               
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fco           cell                    0.066
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fci (picorv32_core/add0/c19) net (fanout = 1)        0.000               
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fco           cell                    0.066
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fci (picorv32_core/add0/c21) net (fanout = 1)        0.000               
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fco           cell                    0.066
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fci (picorv32_core/add0/c23) net (fanout = 1)        0.000               
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fco           cell                    0.066
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fci (picorv32_core/add0/c25) net (fanout = 1)        0.000               
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fco           cell                    0.066
+ picorv32_core/add0/u28|picorv32_core/add0/u27.fci (picorv32_core/add0/c27) net (fanout = 1)        0.000               
+ picorv32_core/add0/u28|picorv32_core/add0/u27.f[0]          cell                    0.131
+ _al_u1131.a[0] (picorv32_core/n30[27])                      net (fanout = 2)        0.425               
+ _al_u1131.fx[0]                                             cell                    0.562
+ _al_u1129|_al_u1168.d[0] (eq1/or_xor_i0$17$_i1$17$_o_lutinv) net (fanout = 7)        0.614               
+ _al_u1129|_al_u1168.f[0]                                    cell                    0.238
+ _al_u1254|_al_u1255_placeOpt_3.d[0] (_al_u1168_o)           net (fanout = 18)       1.024               
+ _al_u1254|_al_u1255_placeOpt_3.f[0]                         cell                    0.238
+ _al_u1283|picorv32_core/prefetched_high_word_reg.d[1] (uart_sel_lutinv_placeOpt_3) net (fanout = 23)       0.843               
+ _al_u1283|picorv32_core/prefetched_high_word_reg.f[1]       cell                    0.238
+ picorv32_core/reg0_b0_placeOpt_5.a[1] (picorv32_core/mem_rdata_latched_noshuffle[0]_lutinv) net (fanout = 13)       0.818 ../src/picorv32.v(333)
+ picorv32_core/reg0_b0_placeOpt_5.fx[0]                      cell                    0.562
+ _al_u1546.c[0] (picorv32_core/mem_rdata_latched$0$_placeOpt_5) net (fanout = 18)       0.711               
+ _al_u1546.fx[0]                                             cell                    0.407
+ _al_u2273|_al_u2460.b[1] (_al_u1546_o)                      net (fanout = 17)       0.573               
+ _al_u2273|_al_u2460.f[1]                                    cell                    0.392
+ _al_u2285|_al_u2282.c[1] (_al_u2273_o)                      net (fanout = 8)        1.544               
+ _al_u2285|_al_u2282.f[1]                                    cell                    0.316
+ picorv32_core/reg0_b20|picorv32_core/reg0_b21.c[1] (_al_u2285_o) net (fanout = 1)        0.704 ../src/picorv32.v(319)
+ Arrival time                                                                       21.514 (16 lvl)
+                                                                                          (46% logic, 54% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                   13.468
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -8.046 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point _al_u2418|picorv32_core/reg0_b26.F (1528029 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -7.977 ns                                                        
+ StartPoint:              _al_u1217|picorv32_core/mem_do_rinst_reg.clk (rising edge triggered by clock clk)
+ EndPoint:                _al_u2418|picorv32_core/reg0_b26.c[0] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u1217|picorv32_core/mem_do_rinst_reg.clk                clock                   3.791
+ _al_u1217|picorv32_core/mem_do_rinst_reg.q[0]               cell                    0.146
+ _al_u1090|_al_u700_placeOpt_2.a[0] (picorv32_core/mem_do_rinst) net (fanout = 33)       0.905 ../src/picorv32.v(321)
+ _al_u1090|_al_u700_placeOpt_2.f[0]                          cell                    0.371
+ _al_u1088|picorv32_core/reg17_b1.d[1] (_al_u700_o_placeOpt_2) net (fanout = 11)       0.596               
+ _al_u1088|picorv32_core/reg17_b1.f[1]                       cell                    0.238
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1] (_al_u1088_o) net (fanout = 90)       0.474               
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.f[1] cell                    0.186
+ _al_u1090|_al_u700.c[1] (_al_u1089_o)                       net (fanout = 60)       0.715               
+ _al_u1090|_al_u700.f[1]                                     cell                    0.228
+ _al_u1295|_al_u1115.b[0] (picorv32_core/mem_xfer)           net (fanout = 19)       0.713 ../src/picorv32.v(337)
+ _al_u1295|_al_u1115.f[0]                                    cell                    0.392
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1] (picorv32_core/mem_la_firstword_xfer) net (fanout = 3)        1.071 ../src/picorv32.v(327)
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.fco           cell                    0.490
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fci (picorv32_core/add0/c1) net (fanout = 1)        0.000               
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fco             cell                    0.066
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fci (picorv32_core/add0/c3) net (fanout = 1)        0.000               
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fco             cell                    0.066
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fci (picorv32_core/add0/c5) net (fanout = 1)        0.000               
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fco             cell                    0.066
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fci (picorv32_core/add0/c7) net (fanout = 1)        0.000               
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fco             cell                    0.066
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fci (picorv32_core/add0/c9) net (fanout = 1)        0.000               
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fco            cell                    0.066
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fci (picorv32_core/add0/c11) net (fanout = 1)        0.000               
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fco           cell                    0.066
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fci (picorv32_core/add0/c13) net (fanout = 1)        0.000               
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fco           cell                    0.066
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fci (picorv32_core/add0/c15) net (fanout = 1)        0.000               
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fco           cell                    0.066
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fci (picorv32_core/add0/c17) net (fanout = 1)        0.000               
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fco           cell                    0.066
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fci (picorv32_core/add0/c19) net (fanout = 1)        0.000               
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fco           cell                    0.066
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fci (picorv32_core/add0/c21) net (fanout = 1)        0.000               
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fco           cell                    0.066
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fci (picorv32_core/add0/c23) net (fanout = 1)        0.000               
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fco           cell                    0.066
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fci (picorv32_core/add0/c25) net (fanout = 1)        0.000               
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fco           cell                    0.066
+ picorv32_core/add0/u28|picorv32_core/add0/u27.fci (picorv32_core/add0/c27) net (fanout = 1)        0.000               
+ picorv32_core/add0/u28|picorv32_core/add0/u27.f[0]          cell                    0.131
+ _al_u1131.a[0] (picorv32_core/n30[27])                      net (fanout = 2)        0.425               
+ _al_u1131.fx[0]                                             cell                    0.562
+ _al_u1129|_al_u1168.d[0] (eq1/or_xor_i0$17$_i1$17$_o_lutinv) net (fanout = 7)        0.614               
+ _al_u1129|_al_u1168.f[0]                                    cell                    0.238
+ _al_u1254|_al_u1255_placeOpt_3.d[0] (_al_u1168_o)           net (fanout = 18)       1.024               
+ _al_u1254|_al_u1255_placeOpt_3.f[0]                         cell                    0.238
+ _al_u1442|uart/reg0_b10.d[1] (uart_sel_lutinv_placeOpt_3)   net (fanout = 23)       1.147               
+ _al_u1442|uart/reg0_b10.f[1]                                cell                    0.238
+ _al_u1457|_al_u2409.a[0] (_al_u1442_o)                      net (fanout = 3)        0.857               
+ _al_u1457|_al_u2409.f[0]                                    cell                    0.385
+ _al_u2395|_al_u2413.e[0] (picorv32_core/n42[26]_lutinv)     net (fanout = 9)        1.698               
+ _al_u2395|_al_u2413.f[0]                                    cell                    0.256
+ _al_u2414|_al_u1593.c[1] (_al_u2413_o)                      net (fanout = 1)        0.414               
+ _al_u2414|_al_u1593.f[1]                                    cell                    0.228
+ _al_u2416.c[0] (_al_u2414_o)                                net (fanout = 2)        0.418               
+ _al_u2416.fx[0]                                             cell                    0.407
+ _al_u2418|picorv32_core/reg0_b26.c[0] (_al_u2416_o)         net (fanout = 1)        0.991 ../src/picorv32.v(319)
+ Arrival time                                                                       21.445 (16 lvl)
+                                                                                          (44% logic, 56% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                   13.468
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -7.977 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -7.977 ns                                                        
+ StartPoint:              _al_u1217|picorv32_core/mem_do_rinst_reg.clk (rising edge triggered by clock clk)
+ EndPoint:                _al_u2418|picorv32_core/reg0_b26.c[0] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u1217|picorv32_core/mem_do_rinst_reg.clk                clock                   3.791
+ _al_u1217|picorv32_core/mem_do_rinst_reg.q[0]               cell                    0.146
+ _al_u1090|_al_u700_placeOpt_2.a[0] (picorv32_core/mem_do_rinst) net (fanout = 33)       0.905 ../src/picorv32.v(321)
+ _al_u1090|_al_u700_placeOpt_2.f[0]                          cell                    0.371
+ _al_u1088|picorv32_core/reg17_b1.d[1] (_al_u700_o_placeOpt_2) net (fanout = 11)       0.596               
+ _al_u1088|picorv32_core/reg17_b1.f[1]                       cell                    0.238
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1] (_al_u1088_o) net (fanout = 90)       0.474               
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.f[1] cell                    0.186
+ _al_u1090|_al_u700.c[1] (_al_u1089_o)                       net (fanout = 60)       0.715               
+ _al_u1090|_al_u700.f[1]                                     cell                    0.228
+ _al_u1295|_al_u1115.b[0] (picorv32_core/mem_xfer)           net (fanout = 19)       0.713 ../src/picorv32.v(337)
+ _al_u1295|_al_u1115.f[0]                                    cell                    0.392
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1] (picorv32_core/mem_la_firstword_xfer) net (fanout = 3)        1.071 ../src/picorv32.v(327)
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.fco           cell                    0.490
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fci (picorv32_core/add0/c1) net (fanout = 1)        0.000               
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fco             cell                    0.066
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fci (picorv32_core/add0/c3) net (fanout = 1)        0.000               
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fco             cell                    0.066
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fci (picorv32_core/add0/c5) net (fanout = 1)        0.000               
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fco             cell                    0.066
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fci (picorv32_core/add0/c7) net (fanout = 1)        0.000               
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fco             cell                    0.066
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fci (picorv32_core/add0/c9) net (fanout = 1)        0.000               
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fco            cell                    0.066
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fci (picorv32_core/add0/c11) net (fanout = 1)        0.000               
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fco           cell                    0.066
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fci (picorv32_core/add0/c13) net (fanout = 1)        0.000               
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fco           cell                    0.066
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fci (picorv32_core/add0/c15) net (fanout = 1)        0.000               
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fco           cell                    0.066
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fci (picorv32_core/add0/c17) net (fanout = 1)        0.000               
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fco           cell                    0.066
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fci (picorv32_core/add0/c19) net (fanout = 1)        0.000               
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fco           cell                    0.066
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fci (picorv32_core/add0/c21) net (fanout = 1)        0.000               
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fco           cell                    0.066
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fci (picorv32_core/add0/c23) net (fanout = 1)        0.000               
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fco           cell                    0.066
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fci (picorv32_core/add0/c25) net (fanout = 1)        0.000               
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fco           cell                    0.066
+ picorv32_core/add0/u28|picorv32_core/add0/u27.fci (picorv32_core/add0/c27) net (fanout = 1)        0.000               
+ picorv32_core/add0/u28|picorv32_core/add0/u27.f[0]          cell                    0.131
+ _al_u1131.a[0] (picorv32_core/n30[27])                      net (fanout = 2)        0.425               
+ _al_u1131.fx[0]                                             cell                    0.562
+ _al_u1129|_al_u1168.d[0] (eq1/or_xor_i0$17$_i1$17$_o_lutinv) net (fanout = 7)        0.614               
+ _al_u1129|_al_u1168.f[0]                                    cell                    0.238
+ _al_u1254|_al_u1255_placeOpt_3.d[0] (_al_u1168_o)           net (fanout = 18)       1.024               
+ _al_u1254|_al_u1255_placeOpt_3.f[0]                         cell                    0.238
+ _al_u1442|uart/reg0_b10.d[1] (uart_sel_lutinv_placeOpt_3)   net (fanout = 23)       1.147               
+ _al_u1442|uart/reg0_b10.f[1]                                cell                    0.238
+ _al_u1457|_al_u2409.a[0] (_al_u1442_o)                      net (fanout = 3)        0.857               
+ _al_u1457|_al_u2409.f[0]                                    cell                    0.385
+ _al_u2395|_al_u2413.e[0] (picorv32_core/n42[26]_lutinv)     net (fanout = 9)        1.698               
+ _al_u2395|_al_u2413.f[0]                                    cell                    0.256
+ _al_u2414|_al_u1593.c[1] (_al_u2413_o)                      net (fanout = 1)        0.414               
+ _al_u2414|_al_u1593.f[1]                                    cell                    0.228
+ _al_u2416.c[1] (_al_u2414_o)                                net (fanout = 2)        0.418               
+ _al_u2416.fx[0]                                             cell                    0.407
+ _al_u2418|picorv32_core/reg0_b26.c[0] (_al_u2416_o)         net (fanout = 1)        0.991 ../src/picorv32.v(319)
+ Arrival time                                                                       21.445 (16 lvl)
+                                                                                          (44% logic, 56% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                   13.468
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -7.977 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -7.977 ns                                                        
+ StartPoint:              _al_u1217|picorv32_core/mem_do_rinst_reg.clk (rising edge triggered by clock clk)
+ EndPoint:                _al_u2418|picorv32_core/reg0_b26.c[0] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u1217|picorv32_core/mem_do_rinst_reg.clk                clock                   3.791
+ _al_u1217|picorv32_core/mem_do_rinst_reg.q[0]               cell                    0.146
+ _al_u1090|_al_u700_placeOpt_2.a[0] (picorv32_core/mem_do_rinst) net (fanout = 33)       0.905 ../src/picorv32.v(321)
+ _al_u1090|_al_u700_placeOpt_2.f[0]                          cell                    0.371
+ _al_u1088|picorv32_core/reg17_b1.d[1] (_al_u700_o_placeOpt_2) net (fanout = 11)       0.596               
+ _al_u1088|picorv32_core/reg17_b1.f[1]                       cell                    0.238
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1] (_al_u1088_o) net (fanout = 90)       0.474               
+ _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.f[1] cell                    0.186
+ _al_u1090|_al_u700.c[1] (_al_u1089_o)                       net (fanout = 60)       0.715               
+ _al_u1090|_al_u700.f[1]                                     cell                    0.228
+ _al_u1295|_al_u1115.b[0] (picorv32_core/mem_xfer)           net (fanout = 19)       0.713 ../src/picorv32.v(337)
+ _al_u1295|_al_u1115.f[0]                                    cell                    0.392
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1] (picorv32_core/mem_la_firstword_xfer) net (fanout = 3)        1.071 ../src/picorv32.v(327)
+ picorv32_core/add0/u0|picorv32_core/add0/ucin.fco           cell                    0.490
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fci (picorv32_core/add0/c1) net (fanout = 1)        0.000               
+ picorv32_core/add0/u2|picorv32_core/add0/u1.fco             cell                    0.066
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fci (picorv32_core/add0/c3) net (fanout = 1)        0.000               
+ picorv32_core/add0/u4|picorv32_core/add0/u3.fco             cell                    0.066
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fci (picorv32_core/add0/c5) net (fanout = 1)        0.000               
+ picorv32_core/add0/u6|picorv32_core/add0/u5.fco             cell                    0.066
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fci (picorv32_core/add0/c7) net (fanout = 1)        0.000               
+ picorv32_core/add0/u8|picorv32_core/add0/u7.fco             cell                    0.066
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fci (picorv32_core/add0/c9) net (fanout = 1)        0.000               
+ picorv32_core/add0/u10|picorv32_core/add0/u9.fco            cell                    0.066
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fci (picorv32_core/add0/c11) net (fanout = 1)        0.000               
+ picorv32_core/add0/u12|picorv32_core/add0/u11.fco           cell                    0.066
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fci (picorv32_core/add0/c13) net (fanout = 1)        0.000               
+ picorv32_core/add0/u14|picorv32_core/add0/u13.fco           cell                    0.066
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fci (picorv32_core/add0/c15) net (fanout = 1)        0.000               
+ picorv32_core/add0/u16|picorv32_core/add0/u15.fco           cell                    0.066
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fci (picorv32_core/add0/c17) net (fanout = 1)        0.000               
+ picorv32_core/add0/u18|picorv32_core/add0/u17.fco           cell                    0.066
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fci (picorv32_core/add0/c19) net (fanout = 1)        0.000               
+ picorv32_core/add0/u20|picorv32_core/add0/u19.fco           cell                    0.066
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fci (picorv32_core/add0/c21) net (fanout = 1)        0.000               
+ picorv32_core/add0/u22|picorv32_core/add0/u21.fco           cell                    0.066
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fci (picorv32_core/add0/c23) net (fanout = 1)        0.000               
+ picorv32_core/add0/u24|picorv32_core/add0/u23.fco           cell                    0.066
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fci (picorv32_core/add0/c25) net (fanout = 1)        0.000               
+ picorv32_core/add0/u26|picorv32_core/add0/u25.fco           cell                    0.066
+ picorv32_core/add0/u28|picorv32_core/add0/u27.fci (picorv32_core/add0/c27) net (fanout = 1)        0.000               
+ picorv32_core/add0/u28|picorv32_core/add0/u27.f[0]          cell                    0.131
+ _al_u1131.a[1] (picorv32_core/n30[27])                      net (fanout = 2)        0.425               
+ _al_u1131.fx[0]                                             cell                    0.562
+ _al_u1129|_al_u1168.d[0] (eq1/or_xor_i0$17$_i1$17$_o_lutinv) net (fanout = 7)        0.614               
+ _al_u1129|_al_u1168.f[0]                                    cell                    0.238
+ _al_u1254|_al_u1255_placeOpt_3.d[0] (_al_u1168_o)           net (fanout = 18)       1.024               
+ _al_u1254|_al_u1255_placeOpt_3.f[0]                         cell                    0.238
+ _al_u1442|uart/reg0_b10.d[1] (uart_sel_lutinv_placeOpt_3)   net (fanout = 23)       1.147               
+ _al_u1442|uart/reg0_b10.f[1]                                cell                    0.238
+ _al_u1457|_al_u2409.a[0] (_al_u1442_o)                      net (fanout = 3)        0.857               
+ _al_u1457|_al_u2409.f[0]                                    cell                    0.385
+ _al_u2395|_al_u2413.e[0] (picorv32_core/n42[26]_lutinv)     net (fanout = 9)        1.698               
+ _al_u2395|_al_u2413.f[0]                                    cell                    0.256
+ _al_u2414|_al_u1593.c[1] (_al_u2413_o)                      net (fanout = 1)        0.414               
+ _al_u2414|_al_u1593.f[1]                                    cell                    0.228
+ _al_u2416.c[0] (_al_u2414_o)                                net (fanout = 2)        0.418               
+ _al_u2416.fx[0]                                             cell                    0.407
+ _al_u2418|picorv32_core/reg0_b26.c[0] (_al_u2416_o)         net (fanout = 1)        0.991 ../src/picorv32.v(319)
+ Arrival time                                                                       21.445 (16 lvl)
+                                                                                          (44% logic, 56% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                   13.468
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -7.977 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point picorv32_core/cpuregs_p1/dram_r1_c7_l.F (327 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.172 ns                                                        
+ StartPoint:              picorv32_core/reg24_b1|picorv32_core/reg24_b2.clk (rising edge triggered by clock clk)
+ EndPoint:                picorv32_core/cpuregs_p1/dram_r1_c7_l.b[0] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ picorv32_core/reg24_b1|picorv32_core/reg24_b2.clk           clock                   3.452
+ picorv32_core/reg24_b1|picorv32_core/reg24_b2.q[1]          cell                    0.140
+ picorv32_core/cpuregs_p1/dram_r1_c7_l.b[0] (picorv32_core/latched_rd[1]) net (fanout = 33)       0.292 ../src/picorv32.v(1163)
+ Arrival time                                                                        3.884 (1 lvl)
+                                                                                          (93% logic, 7% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     3.712
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.172 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.417 ns                                                        
+ StartPoint:              picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk (rising edge triggered by clock clk)
+ EndPoint:                picorv32_core/cpuregs_p1/dram_r1_c7_l.d[0] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk           clock                   3.452
+ picorv32_core/reg24_b0|picorv32_core/reg24_b3.q[0]          cell                    0.140
+ picorv32_core/cpuregs_p1/dram_r1_c7_l.d[0] (picorv32_core/latched_rd[3]) net (fanout = 33)       0.537 ../src/picorv32.v(1163)
+ Arrival time                                                                        4.129 (1 lvl)
+                                                                                          (87% logic, 13% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     3.712
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.417 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.547 ns                                                        
+ StartPoint:              picorv32_core/reg24_b1|picorv32_core/reg24_b2.clk (rising edge triggered by clock clk)
+ EndPoint:                picorv32_core/cpuregs_p1/dram_r1_c7_l.c[0] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ picorv32_core/reg24_b1|picorv32_core/reg24_b2.clk           clock                   3.452
+ picorv32_core/reg24_b1|picorv32_core/reg24_b2.q[0]          cell                    0.140
+ picorv32_core/cpuregs_p1/dram_r1_c7_l.c[0] (picorv32_core/latched_rd[2]) net (fanout = 33)       0.667 ../src/picorv32.v(1163)
+ Arrival time                                                                        4.259 (1 lvl)
+                                                                                          (85% logic, 15% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     3.712
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.547 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point picorv32_core/cpuregs_p1/dram_r0_c1_l.F (135 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.172 ns                                                        
+ StartPoint:              picorv32_core/reg24_b1|picorv32_core/reg24_b2.clk (rising edge triggered by clock clk)
+ EndPoint:                picorv32_core/cpuregs_p1/dram_r0_c1_l.b[0] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ picorv32_core/reg24_b1|picorv32_core/reg24_b2.clk           clock                   3.452
+ picorv32_core/reg24_b1|picorv32_core/reg24_b2.q[1]          cell                    0.140
+ picorv32_core/cpuregs_p1/dram_r0_c1_l.b[0] (picorv32_core/latched_rd[1]) net (fanout = 33)       0.292 ../src/picorv32.v(1163)
+ Arrival time                                                                        3.884 (1 lvl)
+                                                                                          (93% logic, 7% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     3.712
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.172 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.173 ns                                                        
+ StartPoint:              picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk (rising edge triggered by clock clk)
+ EndPoint:                picorv32_core/cpuregs_p1/dram_r0_c1_l.a[0] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk           clock                   3.452
+ picorv32_core/reg24_b0|picorv32_core/reg24_b3.q[1]          cell                    0.140
+ picorv32_core/cpuregs_p1/dram_r0_c1_l.a[0] (picorv32_core/latched_rd[0]) net (fanout = 33)       0.293 ../src/picorv32.v(1163)
+ Arrival time                                                                        3.885 (1 lvl)
+                                                                                          (93% logic, 7% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     3.712
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.173 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.412 ns                                                        
+ StartPoint:              picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk (rising edge triggered by clock clk)
+ EndPoint:                picorv32_core/cpuregs_p1/dram_r0_c1_l.d[0] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk           clock                   3.452
+ picorv32_core/reg24_b0|picorv32_core/reg24_b3.q[0]          cell                    0.140
+ picorv32_core/cpuregs_p1/dram_r0_c1_l.d[0] (picorv32_core/latched_rd[3]) net (fanout = 33)       0.532 ../src/picorv32.v(1163)
+ Arrival time                                                                        4.124 (1 lvl)
+                                                                                          (88% logic, 12% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     3.712
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.412 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point picorv32_core/cpuregs_p2/dram_r1_c1_l.F (135 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.183 ns                                                        
+ StartPoint:              picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk (rising edge triggered by clock clk)
+ EndPoint:                picorv32_core/cpuregs_p2/dram_r1_c1_l.a[0] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk           clock                   3.452
+ picorv32_core/reg24_b0|picorv32_core/reg24_b3.q[1]          cell                    0.140
+ picorv32_core/cpuregs_p2/dram_r1_c1_l.a[0] (picorv32_core/latched_rd[0]) net (fanout = 33)       0.303 ../src/picorv32.v(1163)
+ Arrival time                                                                        3.895 (1 lvl)
+                                                                                          (93% logic, 7% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     3.712
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.183 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.305 ns                                                        
+ StartPoint:              picorv32_core/reg24_b1|picorv32_core/reg24_b2.clk (rising edge triggered by clock clk)
+ EndPoint:                picorv32_core/cpuregs_p2/dram_r1_c1_l.b[0] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ picorv32_core/reg24_b1|picorv32_core/reg24_b2.clk           clock                   3.452
+ picorv32_core/reg24_b1|picorv32_core/reg24_b2.q[1]          cell                    0.140
+ picorv32_core/cpuregs_p2/dram_r1_c1_l.b[0] (picorv32_core/latched_rd[1]) net (fanout = 33)       0.425 ../src/picorv32.v(1163)
+ Arrival time                                                                        4.017 (1 lvl)
+                                                                                          (90% logic, 10% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     3.712
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.305 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.417 ns                                                        
+ StartPoint:              picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk (rising edge triggered by clock clk)
+ EndPoint:                picorv32_core/cpuregs_p2/dram_r1_c1_l.d[0] (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk           clock                   3.452
+ picorv32_core/reg24_b0|picorv32_core/reg24_b3.q[0]          cell                    0.140
+ picorv32_core/cpuregs_p2/dram_r1_c1_l.d[0] (picorv32_core/latched_rd[3]) net (fanout = 33)       0.537 ../src/picorv32.v(1163)
+ Arrival time                                                                        4.129 (1 lvl)
+                                                                                          (87% logic, 13% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     3.712
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.417 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Recovery checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point _al_u1432|uart/reg0_b30.SR (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (recovery check)   7.634 ns                                                        
+ StartPoint:              _al_u752|resetn_reg_placeOpt_15.clk (rising edge triggered by clock clk)
+ EndPoint:                _al_u1432|uart/reg0_b30.sr (rising edge triggered by clock clk) 
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u752|resetn_reg_placeOpt_15.clk                         clock                   3.791
+ _al_u752|resetn_reg_placeOpt_15.q[0]                        cell                    0.146
+ _al_u1432|uart/reg0_b30.sr (resetn_placeOpt_15)             net (fanout = 27)       1.794               
+ Arrival time                                                                        5.731 (1 lvl)
+                                                                                          (69% logic, 31% net)
+
+ Required time (t_capture_clk - recovery_time - uncertainty_s + crp)                13.365
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            7.634 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point _al_u1459|uart/reg0_b23.SR (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (recovery check)   7.691 ns                                                        
+ StartPoint:              _al_u752|resetn_reg_placeOpt_15.clk (rising edge triggered by clock clk)
+ EndPoint:                _al_u1459|uart/reg0_b23.sr (rising edge triggered by clock clk) 
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u752|resetn_reg_placeOpt_15.clk                         clock                   3.791
+ _al_u752|resetn_reg_placeOpt_15.q[0]                        cell                    0.146
+ _al_u1459|uart/reg0_b23.sr (resetn_placeOpt_15)             net (fanout = 27)       1.737               
+ Arrival time                                                                        5.674 (1 lvl)
+                                                                                          (70% logic, 30% net)
+
+ Required time (t_capture_clk - recovery_time - uncertainty_s + crp)                13.365
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            7.691 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point _al_u1442|uart/reg0_b10.SR (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (recovery check)   7.707 ns                                                        
+ StartPoint:              _al_u752|resetn_reg_placeOpt_15.clk (rising edge triggered by clock clk)
+ EndPoint:                _al_u1442|uart/reg0_b10.sr (rising edge triggered by clock clk) 
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u752|resetn_reg_placeOpt_15.clk                         clock                   3.791
+ _al_u752|resetn_reg_placeOpt_15.q[0]                        cell                    0.146
+ _al_u1442|uart/reg0_b10.sr (resetn_placeOpt_15)             net (fanout = 27)       1.721               
+ Arrival time                                                                        5.658 (1 lvl)
+                                                                                          (70% logic, 30% net)
+
+ Required time (t_capture_clk - recovery_time - uncertainty_s + crp)                13.365
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            7.707 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Removal checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point uart/reg1_b16|uart/reg1_b30.SR (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (removal check)    0.243 ns                                                        
+ StartPoint:              _al_u752|resetn_reg_placeOpt_5.clk (rising edge triggered by clock clk)
+ EndPoint:                uart/reg1_b16|uart/reg1_b30.sr (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u752|resetn_reg_placeOpt_5.clk                          clock                   3.452
+ _al_u752|resetn_reg_placeOpt_5.q[0]                         cell                    0.140
+ uart/reg1_b16|uart/reg1_b30.sr (resetn_placeOpt_5)          net (fanout = 31)       0.422               
+ Arrival time                                                                        4.014 (1 lvl)
+                                                                                          (90% logic, 10% net)
+
+ Required time (t_capture_clk + removal_time + uncertainty_h + crp)                  3.771
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.243 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point uart/reg1_b17|uart/reg1_b3.SR (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (removal check)    0.273 ns                                                        
+ StartPoint:              _al_u752|resetn_reg_placeOpt_2.clk (rising edge triggered by clock clk)
+ EndPoint:                uart/reg1_b17|uart/reg1_b3.sr (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u752|resetn_reg_placeOpt_2.clk                          clock                   3.452
+ _al_u752|resetn_reg_placeOpt_2.q[0]                         cell                    0.140
+ uart/reg1_b17|uart/reg1_b3.sr (resetn_placeOpt_2)           net (fanout = 13)       0.559               
+ Arrival time                                                                        4.151 (1 lvl)
+                                                                                          (87% logic, 13% net)
+
+ Required time (t_capture_clk + removal_time + uncertainty_h + crp)                  3.878
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.273 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point uart/reg1_b13|uart/reg1_b5.SR (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (removal check)    0.273 ns                                                        
+ StartPoint:              _al_u752|resetn_reg_placeOpt_2.clk (rising edge triggered by clock clk)
+ EndPoint:                uart/reg1_b13|uart/reg1_b5.sr (rising edge triggered by clock clk)
+ Clock group:             clk                                                             
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u752|resetn_reg_placeOpt_2.clk                          clock                   3.452
+ _al_u752|resetn_reg_placeOpt_2.q[0]                         cell                    0.140
+ uart/reg1_b13|uart/reg1_b5.sr (resetn_placeOpt_2)           net (fanout = 13)       0.559               
+ Arrival time                                                                        4.151 (1 lvl)
+                                                                                          (87% logic, 13% net)
+
+ Required time (t_capture_clk + removal_time + uncertainty_h + crp)                  3.878
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.273 ns
+
+---------------------------------------------------------------------------------------------------------
+
+
+=========================================================================================================
+Timing summary:                                                                           
+---------------------------------------------------------------------------------------------------------
+Constraint path number: 147073498 (STA coverage = 99.76%)
+Timing violations: 320 setup errors, and 0 hold errors.
+Minimal setup slack: -8.087, minimal hold slack: 0.172
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  clk (100.000MHz)                              18.087ns      55.288MHz        0.380ns       632    -1560.441ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
+---------------------------------------------------------------------------------------------------------

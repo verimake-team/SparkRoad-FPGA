@@ -1,0 +1,460 @@
+eagle_s20
+13 23 706 2890 147073498 320 0
+-8.087 0.172 system eagle_s20 QFN88 Detail 8 1
+clock: clk
+13 147073498 2890 4
+Setup check
+23 3
+Endpoint: picorv32_core/reg0_b20|picorv32_core/reg0_b21.F
+23 -8.087000 1222043 3
+Timing path: _al_u1217|picorv32_core/mem_do_rinst_reg.clk->picorv32_core/reg0_b20|picorv32_core/reg0_b21.F
+_al_u1217|picorv32_core/mem_do_rinst_reg.clk
+picorv32_core/reg0_b20|picorv32_core/reg0_b21.F
+25 -8.087000 13.468000 21.555000 16 29
+picorv32_core/mem_do_rinst _al_u1090|_al_u700_placeOpt_2.a[0]
+_al_u700_o_placeOpt_2 _al_u1088|picorv32_core/reg17_b1.d[1]
+_al_u1088_o _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1]
+_al_u1089_o _al_u1090|_al_u700.c[1]
+picorv32_core/mem_xfer _al_u1295|_al_u1115.b[0]
+picorv32_core/mem_la_firstword_xfer picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1]
+picorv32_core/add0/c1 picorv32_core/add0/u2|picorv32_core/add0/u1.fci
+picorv32_core/add0/c3 picorv32_core/add0/u4|picorv32_core/add0/u3.fci
+picorv32_core/add0/c5 picorv32_core/add0/u6|picorv32_core/add0/u5.fci
+picorv32_core/add0/c7 picorv32_core/add0/u8|picorv32_core/add0/u7.fci
+picorv32_core/add0/c9 picorv32_core/add0/u10|picorv32_core/add0/u9.fci
+picorv32_core/add0/c11 picorv32_core/add0/u12|picorv32_core/add0/u11.fci
+picorv32_core/add0/c13 picorv32_core/add0/u14|picorv32_core/add0/u13.fci
+picorv32_core/add0/c15 picorv32_core/add0/u16|picorv32_core/add0/u15.fci
+picorv32_core/add0/c17 picorv32_core/add0/u18|picorv32_core/add0/u17.fci
+picorv32_core/add0/c19 picorv32_core/add0/u20|picorv32_core/add0/u19.fci
+picorv32_core/add0/c21 picorv32_core/add0/u22|picorv32_core/add0/u21.fci
+picorv32_core/add0/c23 picorv32_core/add0/u24|picorv32_core/add0/u23.fci
+picorv32_core/add0/c25 picorv32_core/add0/u26|picorv32_core/add0/u25.fci
+picorv32_core/add0/c27 picorv32_core/add0/u28|picorv32_core/add0/u27.fci
+picorv32_core/n30[27] _al_u1131.a[0]
+eq1/or_xor_i0$17$_i1$17$_o_lutinv _al_u1129|_al_u1168.d[0]
+_al_u1168_o _al_u1254|_al_u1255_placeOpt_3.d[0]
+uart_sel_lutinv_placeOpt_3 _al_u1283|picorv32_core/prefetched_high_word_reg.d[1]
+picorv32_core/mem_rdata_latched_noshuffle[0]_lutinv picorv32_core/reg0_b0_placeOpt_5.a[0]
+picorv32_core/mem_rdata_latched$0$_placeOpt_5 _al_u1546.c[0]
+_al_u1546_o _al_u2273|_al_u2460.b[1]
+_al_u2273_o _al_u2276|_al_u2269.c[1]
+_al_u2276_o picorv32_core/reg0_b20|picorv32_core/reg0_b21.e[0]
+
+Timing path: _al_u1217|picorv32_core/mem_do_rinst_reg.clk->picorv32_core/reg0_b20|picorv32_core/reg0_b21.F
+_al_u1217|picorv32_core/mem_do_rinst_reg.clk
+picorv32_core/reg0_b20|picorv32_core/reg0_b21.F
+100 -8.087000 13.468000 21.555000 16 29
+picorv32_core/mem_do_rinst _al_u1090|_al_u700_placeOpt_2.a[0]
+_al_u700_o_placeOpt_2 _al_u1088|picorv32_core/reg17_b1.d[1]
+_al_u1088_o _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1]
+_al_u1089_o _al_u1090|_al_u700.c[1]
+picorv32_core/mem_xfer _al_u1295|_al_u1115.b[0]
+picorv32_core/mem_la_firstword_xfer picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1]
+picorv32_core/add0/c1 picorv32_core/add0/u2|picorv32_core/add0/u1.fci
+picorv32_core/add0/c3 picorv32_core/add0/u4|picorv32_core/add0/u3.fci
+picorv32_core/add0/c5 picorv32_core/add0/u6|picorv32_core/add0/u5.fci
+picorv32_core/add0/c7 picorv32_core/add0/u8|picorv32_core/add0/u7.fci
+picorv32_core/add0/c9 picorv32_core/add0/u10|picorv32_core/add0/u9.fci
+picorv32_core/add0/c11 picorv32_core/add0/u12|picorv32_core/add0/u11.fci
+picorv32_core/add0/c13 picorv32_core/add0/u14|picorv32_core/add0/u13.fci
+picorv32_core/add0/c15 picorv32_core/add0/u16|picorv32_core/add0/u15.fci
+picorv32_core/add0/c17 picorv32_core/add0/u18|picorv32_core/add0/u17.fci
+picorv32_core/add0/c19 picorv32_core/add0/u20|picorv32_core/add0/u19.fci
+picorv32_core/add0/c21 picorv32_core/add0/u22|picorv32_core/add0/u21.fci
+picorv32_core/add0/c23 picorv32_core/add0/u24|picorv32_core/add0/u23.fci
+picorv32_core/add0/c25 picorv32_core/add0/u26|picorv32_core/add0/u25.fci
+picorv32_core/add0/c27 picorv32_core/add0/u28|picorv32_core/add0/u27.fci
+picorv32_core/n30[27] _al_u1131.a[0]
+eq1/or_xor_i0$17$_i1$17$_o_lutinv _al_u1129|_al_u1168.d[0]
+_al_u1168_o _al_u1254|_al_u1255_placeOpt_3.d[0]
+uart_sel_lutinv_placeOpt_3 _al_u1283|picorv32_core/prefetched_high_word_reg.d[1]
+picorv32_core/mem_rdata_latched_noshuffle[0]_lutinv picorv32_core/reg0_b0_placeOpt_5.a[0]
+picorv32_core/mem_rdata_latched$0$_placeOpt_5 _al_u1546.c[1]
+_al_u1546_o _al_u2273|_al_u2460.b[1]
+_al_u2273_o _al_u2276|_al_u2269.c[1]
+_al_u2276_o picorv32_core/reg0_b20|picorv32_core/reg0_b21.e[0]
+
+Timing path: _al_u1217|picorv32_core/mem_do_rinst_reg.clk->picorv32_core/reg0_b20|picorv32_core/reg0_b21.F
+_al_u1217|picorv32_core/mem_do_rinst_reg.clk
+picorv32_core/reg0_b20|picorv32_core/reg0_b21.F
+175 -8.087000 13.468000 21.555000 16 29
+picorv32_core/mem_do_rinst _al_u1090|_al_u700_placeOpt_2.a[0]
+_al_u700_o_placeOpt_2 _al_u1088|picorv32_core/reg17_b1.d[1]
+_al_u1088_o _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1]
+_al_u1089_o _al_u1090|_al_u700.c[1]
+picorv32_core/mem_xfer _al_u1295|_al_u1115.b[0]
+picorv32_core/mem_la_firstword_xfer picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1]
+picorv32_core/add0/c1 picorv32_core/add0/u2|picorv32_core/add0/u1.fci
+picorv32_core/add0/c3 picorv32_core/add0/u4|picorv32_core/add0/u3.fci
+picorv32_core/add0/c5 picorv32_core/add0/u6|picorv32_core/add0/u5.fci
+picorv32_core/add0/c7 picorv32_core/add0/u8|picorv32_core/add0/u7.fci
+picorv32_core/add0/c9 picorv32_core/add0/u10|picorv32_core/add0/u9.fci
+picorv32_core/add0/c11 picorv32_core/add0/u12|picorv32_core/add0/u11.fci
+picorv32_core/add0/c13 picorv32_core/add0/u14|picorv32_core/add0/u13.fci
+picorv32_core/add0/c15 picorv32_core/add0/u16|picorv32_core/add0/u15.fci
+picorv32_core/add0/c17 picorv32_core/add0/u18|picorv32_core/add0/u17.fci
+picorv32_core/add0/c19 picorv32_core/add0/u20|picorv32_core/add0/u19.fci
+picorv32_core/add0/c21 picorv32_core/add0/u22|picorv32_core/add0/u21.fci
+picorv32_core/add0/c23 picorv32_core/add0/u24|picorv32_core/add0/u23.fci
+picorv32_core/add0/c25 picorv32_core/add0/u26|picorv32_core/add0/u25.fci
+picorv32_core/add0/c27 picorv32_core/add0/u28|picorv32_core/add0/u27.fci
+picorv32_core/n30[27] _al_u1131.a[0]
+eq1/or_xor_i0$17$_i1$17$_o_lutinv _al_u1129|_al_u1168.d[0]
+_al_u1168_o _al_u1254|_al_u1255_placeOpt_3.d[0]
+uart_sel_lutinv_placeOpt_3 _al_u1283|picorv32_core/prefetched_high_word_reg.d[1]
+picorv32_core/mem_rdata_latched_noshuffle[0]_lutinv picorv32_core/reg0_b0_placeOpt_5.a[1]
+picorv32_core/mem_rdata_latched$0$_placeOpt_5 _al_u1546.c[0]
+_al_u1546_o _al_u2273|_al_u2460.b[1]
+_al_u2273_o _al_u2276|_al_u2269.c[1]
+_al_u2276_o picorv32_core/reg0_b20|picorv32_core/reg0_b21.e[0]
+
+
+Endpoint: picorv32_core/reg0_b20|picorv32_core/reg0_b21.F
+250 -8.046000 1222043 3
+Timing path: _al_u1217|picorv32_core/mem_do_rinst_reg.clk->picorv32_core/reg0_b20|picorv32_core/reg0_b21.F
+_al_u1217|picorv32_core/mem_do_rinst_reg.clk
+picorv32_core/reg0_b20|picorv32_core/reg0_b21.F
+252 -8.046000 13.468000 21.514000 16 29
+picorv32_core/mem_do_rinst _al_u1090|_al_u700_placeOpt_2.a[0]
+_al_u700_o_placeOpt_2 _al_u1088|picorv32_core/reg17_b1.d[1]
+_al_u1088_o _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1]
+_al_u1089_o _al_u1090|_al_u700.c[1]
+picorv32_core/mem_xfer _al_u1295|_al_u1115.b[0]
+picorv32_core/mem_la_firstword_xfer picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1]
+picorv32_core/add0/c1 picorv32_core/add0/u2|picorv32_core/add0/u1.fci
+picorv32_core/add0/c3 picorv32_core/add0/u4|picorv32_core/add0/u3.fci
+picorv32_core/add0/c5 picorv32_core/add0/u6|picorv32_core/add0/u5.fci
+picorv32_core/add0/c7 picorv32_core/add0/u8|picorv32_core/add0/u7.fci
+picorv32_core/add0/c9 picorv32_core/add0/u10|picorv32_core/add0/u9.fci
+picorv32_core/add0/c11 picorv32_core/add0/u12|picorv32_core/add0/u11.fci
+picorv32_core/add0/c13 picorv32_core/add0/u14|picorv32_core/add0/u13.fci
+picorv32_core/add0/c15 picorv32_core/add0/u16|picorv32_core/add0/u15.fci
+picorv32_core/add0/c17 picorv32_core/add0/u18|picorv32_core/add0/u17.fci
+picorv32_core/add0/c19 picorv32_core/add0/u20|picorv32_core/add0/u19.fci
+picorv32_core/add0/c21 picorv32_core/add0/u22|picorv32_core/add0/u21.fci
+picorv32_core/add0/c23 picorv32_core/add0/u24|picorv32_core/add0/u23.fci
+picorv32_core/add0/c25 picorv32_core/add0/u26|picorv32_core/add0/u25.fci
+picorv32_core/add0/c27 picorv32_core/add0/u28|picorv32_core/add0/u27.fci
+picorv32_core/n30[27] _al_u1131.a[0]
+eq1/or_xor_i0$17$_i1$17$_o_lutinv _al_u1129|_al_u1168.d[0]
+_al_u1168_o _al_u1254|_al_u1255_placeOpt_3.d[0]
+uart_sel_lutinv_placeOpt_3 _al_u1283|picorv32_core/prefetched_high_word_reg.d[1]
+picorv32_core/mem_rdata_latched_noshuffle[0]_lutinv picorv32_core/reg0_b0_placeOpt_5.a[0]
+picorv32_core/mem_rdata_latched$0$_placeOpt_5 _al_u1546.c[0]
+_al_u1546_o _al_u2273|_al_u2460.b[1]
+_al_u2273_o _al_u2285|_al_u2282.c[1]
+_al_u2285_o picorv32_core/reg0_b20|picorv32_core/reg0_b21.c[1]
+
+Timing path: _al_u1217|picorv32_core/mem_do_rinst_reg.clk->picorv32_core/reg0_b20|picorv32_core/reg0_b21.F
+_al_u1217|picorv32_core/mem_do_rinst_reg.clk
+picorv32_core/reg0_b20|picorv32_core/reg0_b21.F
+327 -8.046000 13.468000 21.514000 16 29
+picorv32_core/mem_do_rinst _al_u1090|_al_u700_placeOpt_2.a[0]
+_al_u700_o_placeOpt_2 _al_u1088|picorv32_core/reg17_b1.d[1]
+_al_u1088_o _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1]
+_al_u1089_o _al_u1090|_al_u700.c[1]
+picorv32_core/mem_xfer _al_u1295|_al_u1115.b[0]
+picorv32_core/mem_la_firstword_xfer picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1]
+picorv32_core/add0/c1 picorv32_core/add0/u2|picorv32_core/add0/u1.fci
+picorv32_core/add0/c3 picorv32_core/add0/u4|picorv32_core/add0/u3.fci
+picorv32_core/add0/c5 picorv32_core/add0/u6|picorv32_core/add0/u5.fci
+picorv32_core/add0/c7 picorv32_core/add0/u8|picorv32_core/add0/u7.fci
+picorv32_core/add0/c9 picorv32_core/add0/u10|picorv32_core/add0/u9.fci
+picorv32_core/add0/c11 picorv32_core/add0/u12|picorv32_core/add0/u11.fci
+picorv32_core/add0/c13 picorv32_core/add0/u14|picorv32_core/add0/u13.fci
+picorv32_core/add0/c15 picorv32_core/add0/u16|picorv32_core/add0/u15.fci
+picorv32_core/add0/c17 picorv32_core/add0/u18|picorv32_core/add0/u17.fci
+picorv32_core/add0/c19 picorv32_core/add0/u20|picorv32_core/add0/u19.fci
+picorv32_core/add0/c21 picorv32_core/add0/u22|picorv32_core/add0/u21.fci
+picorv32_core/add0/c23 picorv32_core/add0/u24|picorv32_core/add0/u23.fci
+picorv32_core/add0/c25 picorv32_core/add0/u26|picorv32_core/add0/u25.fci
+picorv32_core/add0/c27 picorv32_core/add0/u28|picorv32_core/add0/u27.fci
+picorv32_core/n30[27] _al_u1131.a[0]
+eq1/or_xor_i0$17$_i1$17$_o_lutinv _al_u1129|_al_u1168.d[0]
+_al_u1168_o _al_u1254|_al_u1255_placeOpt_3.d[0]
+uart_sel_lutinv_placeOpt_3 _al_u1283|picorv32_core/prefetched_high_word_reg.d[1]
+picorv32_core/mem_rdata_latched_noshuffle[0]_lutinv picorv32_core/reg0_b0_placeOpt_5.a[0]
+picorv32_core/mem_rdata_latched$0$_placeOpt_5 _al_u1546.c[1]
+_al_u1546_o _al_u2273|_al_u2460.b[1]
+_al_u2273_o _al_u2285|_al_u2282.c[1]
+_al_u2285_o picorv32_core/reg0_b20|picorv32_core/reg0_b21.c[1]
+
+Timing path: _al_u1217|picorv32_core/mem_do_rinst_reg.clk->picorv32_core/reg0_b20|picorv32_core/reg0_b21.F
+_al_u1217|picorv32_core/mem_do_rinst_reg.clk
+picorv32_core/reg0_b20|picorv32_core/reg0_b21.F
+402 -8.046000 13.468000 21.514000 16 29
+picorv32_core/mem_do_rinst _al_u1090|_al_u700_placeOpt_2.a[0]
+_al_u700_o_placeOpt_2 _al_u1088|picorv32_core/reg17_b1.d[1]
+_al_u1088_o _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1]
+_al_u1089_o _al_u1090|_al_u700.c[1]
+picorv32_core/mem_xfer _al_u1295|_al_u1115.b[0]
+picorv32_core/mem_la_firstword_xfer picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1]
+picorv32_core/add0/c1 picorv32_core/add0/u2|picorv32_core/add0/u1.fci
+picorv32_core/add0/c3 picorv32_core/add0/u4|picorv32_core/add0/u3.fci
+picorv32_core/add0/c5 picorv32_core/add0/u6|picorv32_core/add0/u5.fci
+picorv32_core/add0/c7 picorv32_core/add0/u8|picorv32_core/add0/u7.fci
+picorv32_core/add0/c9 picorv32_core/add0/u10|picorv32_core/add0/u9.fci
+picorv32_core/add0/c11 picorv32_core/add0/u12|picorv32_core/add0/u11.fci
+picorv32_core/add0/c13 picorv32_core/add0/u14|picorv32_core/add0/u13.fci
+picorv32_core/add0/c15 picorv32_core/add0/u16|picorv32_core/add0/u15.fci
+picorv32_core/add0/c17 picorv32_core/add0/u18|picorv32_core/add0/u17.fci
+picorv32_core/add0/c19 picorv32_core/add0/u20|picorv32_core/add0/u19.fci
+picorv32_core/add0/c21 picorv32_core/add0/u22|picorv32_core/add0/u21.fci
+picorv32_core/add0/c23 picorv32_core/add0/u24|picorv32_core/add0/u23.fci
+picorv32_core/add0/c25 picorv32_core/add0/u26|picorv32_core/add0/u25.fci
+picorv32_core/add0/c27 picorv32_core/add0/u28|picorv32_core/add0/u27.fci
+picorv32_core/n30[27] _al_u1131.a[0]
+eq1/or_xor_i0$17$_i1$17$_o_lutinv _al_u1129|_al_u1168.d[0]
+_al_u1168_o _al_u1254|_al_u1255_placeOpt_3.d[0]
+uart_sel_lutinv_placeOpt_3 _al_u1283|picorv32_core/prefetched_high_word_reg.d[1]
+picorv32_core/mem_rdata_latched_noshuffle[0]_lutinv picorv32_core/reg0_b0_placeOpt_5.a[1]
+picorv32_core/mem_rdata_latched$0$_placeOpt_5 _al_u1546.c[0]
+_al_u1546_o _al_u2273|_al_u2460.b[1]
+_al_u2273_o _al_u2285|_al_u2282.c[1]
+_al_u2285_o picorv32_core/reg0_b20|picorv32_core/reg0_b21.c[1]
+
+
+Endpoint: _al_u2418|picorv32_core/reg0_b26.F
+477 -7.977000 1528029 3
+Timing path: _al_u1217|picorv32_core/mem_do_rinst_reg.clk->_al_u2418|picorv32_core/reg0_b26.F
+_al_u1217|picorv32_core/mem_do_rinst_reg.clk
+_al_u2418|picorv32_core/reg0_b26.F
+479 -7.977000 13.468000 21.445000 16 29
+picorv32_core/mem_do_rinst _al_u1090|_al_u700_placeOpt_2.a[0]
+_al_u700_o_placeOpt_2 _al_u1088|picorv32_core/reg17_b1.d[1]
+_al_u1088_o _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1]
+_al_u1089_o _al_u1090|_al_u700.c[1]
+picorv32_core/mem_xfer _al_u1295|_al_u1115.b[0]
+picorv32_core/mem_la_firstword_xfer picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1]
+picorv32_core/add0/c1 picorv32_core/add0/u2|picorv32_core/add0/u1.fci
+picorv32_core/add0/c3 picorv32_core/add0/u4|picorv32_core/add0/u3.fci
+picorv32_core/add0/c5 picorv32_core/add0/u6|picorv32_core/add0/u5.fci
+picorv32_core/add0/c7 picorv32_core/add0/u8|picorv32_core/add0/u7.fci
+picorv32_core/add0/c9 picorv32_core/add0/u10|picorv32_core/add0/u9.fci
+picorv32_core/add0/c11 picorv32_core/add0/u12|picorv32_core/add0/u11.fci
+picorv32_core/add0/c13 picorv32_core/add0/u14|picorv32_core/add0/u13.fci
+picorv32_core/add0/c15 picorv32_core/add0/u16|picorv32_core/add0/u15.fci
+picorv32_core/add0/c17 picorv32_core/add0/u18|picorv32_core/add0/u17.fci
+picorv32_core/add0/c19 picorv32_core/add0/u20|picorv32_core/add0/u19.fci
+picorv32_core/add0/c21 picorv32_core/add0/u22|picorv32_core/add0/u21.fci
+picorv32_core/add0/c23 picorv32_core/add0/u24|picorv32_core/add0/u23.fci
+picorv32_core/add0/c25 picorv32_core/add0/u26|picorv32_core/add0/u25.fci
+picorv32_core/add0/c27 picorv32_core/add0/u28|picorv32_core/add0/u27.fci
+picorv32_core/n30[27] _al_u1131.a[0]
+eq1/or_xor_i0$17$_i1$17$_o_lutinv _al_u1129|_al_u1168.d[0]
+_al_u1168_o _al_u1254|_al_u1255_placeOpt_3.d[0]
+uart_sel_lutinv_placeOpt_3 _al_u1442|uart/reg0_b10.d[1]
+_al_u1442_o _al_u1457|_al_u2409.a[0]
+picorv32_core/n42[26]_lutinv _al_u2395|_al_u2413.e[0]
+_al_u2413_o _al_u2414|_al_u1593.c[1]
+_al_u2414_o _al_u2416.c[0]
+_al_u2416_o _al_u2418|picorv32_core/reg0_b26.c[0]
+
+Timing path: _al_u1217|picorv32_core/mem_do_rinst_reg.clk->_al_u2418|picorv32_core/reg0_b26.F
+_al_u1217|picorv32_core/mem_do_rinst_reg.clk
+_al_u2418|picorv32_core/reg0_b26.F
+554 -7.977000 13.468000 21.445000 16 29
+picorv32_core/mem_do_rinst _al_u1090|_al_u700_placeOpt_2.a[0]
+_al_u700_o_placeOpt_2 _al_u1088|picorv32_core/reg17_b1.d[1]
+_al_u1088_o _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1]
+_al_u1089_o _al_u1090|_al_u700.c[1]
+picorv32_core/mem_xfer _al_u1295|_al_u1115.b[0]
+picorv32_core/mem_la_firstword_xfer picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1]
+picorv32_core/add0/c1 picorv32_core/add0/u2|picorv32_core/add0/u1.fci
+picorv32_core/add0/c3 picorv32_core/add0/u4|picorv32_core/add0/u3.fci
+picorv32_core/add0/c5 picorv32_core/add0/u6|picorv32_core/add0/u5.fci
+picorv32_core/add0/c7 picorv32_core/add0/u8|picorv32_core/add0/u7.fci
+picorv32_core/add0/c9 picorv32_core/add0/u10|picorv32_core/add0/u9.fci
+picorv32_core/add0/c11 picorv32_core/add0/u12|picorv32_core/add0/u11.fci
+picorv32_core/add0/c13 picorv32_core/add0/u14|picorv32_core/add0/u13.fci
+picorv32_core/add0/c15 picorv32_core/add0/u16|picorv32_core/add0/u15.fci
+picorv32_core/add0/c17 picorv32_core/add0/u18|picorv32_core/add0/u17.fci
+picorv32_core/add0/c19 picorv32_core/add0/u20|picorv32_core/add0/u19.fci
+picorv32_core/add0/c21 picorv32_core/add0/u22|picorv32_core/add0/u21.fci
+picorv32_core/add0/c23 picorv32_core/add0/u24|picorv32_core/add0/u23.fci
+picorv32_core/add0/c25 picorv32_core/add0/u26|picorv32_core/add0/u25.fci
+picorv32_core/add0/c27 picorv32_core/add0/u28|picorv32_core/add0/u27.fci
+picorv32_core/n30[27] _al_u1131.a[0]
+eq1/or_xor_i0$17$_i1$17$_o_lutinv _al_u1129|_al_u1168.d[0]
+_al_u1168_o _al_u1254|_al_u1255_placeOpt_3.d[0]
+uart_sel_lutinv_placeOpt_3 _al_u1442|uart/reg0_b10.d[1]
+_al_u1442_o _al_u1457|_al_u2409.a[0]
+picorv32_core/n42[26]_lutinv _al_u2395|_al_u2413.e[0]
+_al_u2413_o _al_u2414|_al_u1593.c[1]
+_al_u2414_o _al_u2416.c[1]
+_al_u2416_o _al_u2418|picorv32_core/reg0_b26.c[0]
+
+Timing path: _al_u1217|picorv32_core/mem_do_rinst_reg.clk->_al_u2418|picorv32_core/reg0_b26.F
+_al_u1217|picorv32_core/mem_do_rinst_reg.clk
+_al_u2418|picorv32_core/reg0_b26.F
+629 -7.977000 13.468000 21.445000 16 29
+picorv32_core/mem_do_rinst _al_u1090|_al_u700_placeOpt_2.a[0]
+_al_u700_o_placeOpt_2 _al_u1088|picorv32_core/reg17_b1.d[1]
+_al_u1088_o _al_u1089|picorv32_core/clear_prefetched_high_word_q_reg.d[1]
+_al_u1089_o _al_u1090|_al_u700.c[1]
+picorv32_core/mem_xfer _al_u1295|_al_u1115.b[0]
+picorv32_core/mem_la_firstword_xfer picorv32_core/add0/u0|picorv32_core/add0/ucin.b[1]
+picorv32_core/add0/c1 picorv32_core/add0/u2|picorv32_core/add0/u1.fci
+picorv32_core/add0/c3 picorv32_core/add0/u4|picorv32_core/add0/u3.fci
+picorv32_core/add0/c5 picorv32_core/add0/u6|picorv32_core/add0/u5.fci
+picorv32_core/add0/c7 picorv32_core/add0/u8|picorv32_core/add0/u7.fci
+picorv32_core/add0/c9 picorv32_core/add0/u10|picorv32_core/add0/u9.fci
+picorv32_core/add0/c11 picorv32_core/add0/u12|picorv32_core/add0/u11.fci
+picorv32_core/add0/c13 picorv32_core/add0/u14|picorv32_core/add0/u13.fci
+picorv32_core/add0/c15 picorv32_core/add0/u16|picorv32_core/add0/u15.fci
+picorv32_core/add0/c17 picorv32_core/add0/u18|picorv32_core/add0/u17.fci
+picorv32_core/add0/c19 picorv32_core/add0/u20|picorv32_core/add0/u19.fci
+picorv32_core/add0/c21 picorv32_core/add0/u22|picorv32_core/add0/u21.fci
+picorv32_core/add0/c23 picorv32_core/add0/u24|picorv32_core/add0/u23.fci
+picorv32_core/add0/c25 picorv32_core/add0/u26|picorv32_core/add0/u25.fci
+picorv32_core/add0/c27 picorv32_core/add0/u28|picorv32_core/add0/u27.fci
+picorv32_core/n30[27] _al_u1131.a[1]
+eq1/or_xor_i0$17$_i1$17$_o_lutinv _al_u1129|_al_u1168.d[0]
+_al_u1168_o _al_u1254|_al_u1255_placeOpt_3.d[0]
+uart_sel_lutinv_placeOpt_3 _al_u1442|uart/reg0_b10.d[1]
+_al_u1442_o _al_u1457|_al_u2409.a[0]
+picorv32_core/n42[26]_lutinv _al_u2395|_al_u2413.e[0]
+_al_u2413_o _al_u2414|_al_u1593.c[1]
+_al_u2414_o _al_u2416.c[0]
+_al_u2416_o _al_u2418|picorv32_core/reg0_b26.c[0]
+
+
+
+Hold check
+704 3
+Endpoint: picorv32_core/cpuregs_p1/dram_r1_c7_l.F
+706 0.172000 327 3
+Timing path: picorv32_core/reg24_b1|picorv32_core/reg24_b2.clk->picorv32_core/cpuregs_p1/dram_r1_c7_l.F
+picorv32_core/reg24_b1|picorv32_core/reg24_b2.clk
+picorv32_core/cpuregs_p1/dram_r1_c7_l.F
+708 0.172000 3.712000 3.884000 1 1
+picorv32_core/latched_rd[1] picorv32_core/cpuregs_p1/dram_r1_c7_l.b[0]
+
+Timing path: picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk->picorv32_core/cpuregs_p1/dram_r1_c7_l.F
+picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk
+picorv32_core/cpuregs_p1/dram_r1_c7_l.F
+727 0.417000 3.712000 4.129000 1 1
+picorv32_core/latched_rd[3] picorv32_core/cpuregs_p1/dram_r1_c7_l.d[0]
+
+Timing path: picorv32_core/reg24_b1|picorv32_core/reg24_b2.clk->picorv32_core/cpuregs_p1/dram_r1_c7_l.F
+picorv32_core/reg24_b1|picorv32_core/reg24_b2.clk
+picorv32_core/cpuregs_p1/dram_r1_c7_l.F
+746 0.547000 3.712000 4.259000 1 1
+picorv32_core/latched_rd[2] picorv32_core/cpuregs_p1/dram_r1_c7_l.c[0]
+
+
+Endpoint: picorv32_core/cpuregs_p1/dram_r0_c1_l.F
+765 0.172000 135 3
+Timing path: picorv32_core/reg24_b1|picorv32_core/reg24_b2.clk->picorv32_core/cpuregs_p1/dram_r0_c1_l.F
+picorv32_core/reg24_b1|picorv32_core/reg24_b2.clk
+picorv32_core/cpuregs_p1/dram_r0_c1_l.F
+767 0.172000 3.712000 3.884000 1 1
+picorv32_core/latched_rd[1] picorv32_core/cpuregs_p1/dram_r0_c1_l.b[0]
+
+Timing path: picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk->picorv32_core/cpuregs_p1/dram_r0_c1_l.F
+picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk
+picorv32_core/cpuregs_p1/dram_r0_c1_l.F
+786 0.173000 3.712000 3.885000 1 1
+picorv32_core/latched_rd[0] picorv32_core/cpuregs_p1/dram_r0_c1_l.a[0]
+
+Timing path: picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk->picorv32_core/cpuregs_p1/dram_r0_c1_l.F
+picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk
+picorv32_core/cpuregs_p1/dram_r0_c1_l.F
+805 0.412000 3.712000 4.124000 1 1
+picorv32_core/latched_rd[3] picorv32_core/cpuregs_p1/dram_r0_c1_l.d[0]
+
+
+Endpoint: picorv32_core/cpuregs_p2/dram_r1_c1_l.F
+824 0.183000 135 3
+Timing path: picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk->picorv32_core/cpuregs_p2/dram_r1_c1_l.F
+picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk
+picorv32_core/cpuregs_p2/dram_r1_c1_l.F
+826 0.183000 3.712000 3.895000 1 1
+picorv32_core/latched_rd[0] picorv32_core/cpuregs_p2/dram_r1_c1_l.a[0]
+
+Timing path: picorv32_core/reg24_b1|picorv32_core/reg24_b2.clk->picorv32_core/cpuregs_p2/dram_r1_c1_l.F
+picorv32_core/reg24_b1|picorv32_core/reg24_b2.clk
+picorv32_core/cpuregs_p2/dram_r1_c1_l.F
+845 0.305000 3.712000 4.017000 1 1
+picorv32_core/latched_rd[1] picorv32_core/cpuregs_p2/dram_r1_c1_l.b[0]
+
+Timing path: picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk->picorv32_core/cpuregs_p2/dram_r1_c1_l.F
+picorv32_core/reg24_b0|picorv32_core/reg24_b3.clk
+picorv32_core/cpuregs_p2/dram_r1_c1_l.F
+864 0.417000 3.712000 4.129000 1 1
+picorv32_core/latched_rd[3] picorv32_core/cpuregs_p2/dram_r1_c1_l.d[0]
+
+
+
+Recovery check
+883 3
+Endpoint: _al_u1432|uart/reg0_b30.SR
+885 7.634000 1 1
+Timing path: _al_u752|resetn_reg_placeOpt_15.clk->_al_u1432|uart/reg0_b30.SR
+_al_u752|resetn_reg_placeOpt_15.clk
+_al_u1432|uart/reg0_b30.SR
+887 7.634000 13.365000 5.731000 1 1
+resetn_placeOpt_15 _al_u1432|uart/reg0_b30.sr
+
+
+Endpoint: _al_u1459|uart/reg0_b23.SR
+906 7.691000 1 1
+Timing path: _al_u752|resetn_reg_placeOpt_15.clk->_al_u1459|uart/reg0_b23.SR
+_al_u752|resetn_reg_placeOpt_15.clk
+_al_u1459|uart/reg0_b23.SR
+908 7.691000 13.365000 5.674000 1 1
+resetn_placeOpt_15 _al_u1459|uart/reg0_b23.sr
+
+
+Endpoint: _al_u1442|uart/reg0_b10.SR
+927 7.707000 1 1
+Timing path: _al_u752|resetn_reg_placeOpt_15.clk->_al_u1442|uart/reg0_b10.SR
+_al_u752|resetn_reg_placeOpt_15.clk
+_al_u1442|uart/reg0_b10.SR
+929 7.707000 13.365000 5.658000 1 1
+resetn_placeOpt_15 _al_u1442|uart/reg0_b10.sr
+
+
+
+Removal check
+948 3
+Endpoint: uart/reg1_b16|uart/reg1_b30.SR
+950 0.243000 1 1
+Timing path: _al_u752|resetn_reg_placeOpt_5.clk->uart/reg1_b16|uart/reg1_b30.SR
+_al_u752|resetn_reg_placeOpt_5.clk
+uart/reg1_b16|uart/reg1_b30.SR
+952 0.243000 3.771000 4.014000 1 1
+resetn_placeOpt_5 uart/reg1_b16|uart/reg1_b30.sr
+
+
+Endpoint: uart/reg1_b17|uart/reg1_b3.SR
+971 0.273000 1 1
+Timing path: _al_u752|resetn_reg_placeOpt_2.clk->uart/reg1_b17|uart/reg1_b3.SR
+_al_u752|resetn_reg_placeOpt_2.clk
+uart/reg1_b17|uart/reg1_b3.SR
+973 0.273000 3.878000 4.151000 1 1
+resetn_placeOpt_2 uart/reg1_b17|uart/reg1_b3.sr
+
+
+Endpoint: uart/reg1_b13|uart/reg1_b5.SR
+992 0.273000 1 1
+Timing path: _al_u752|resetn_reg_placeOpt_2.clk->uart/reg1_b13|uart/reg1_b5.SR
+_al_u752|resetn_reg_placeOpt_2.clk
+uart/reg1_b13|uart/reg1_b5.SR
+994 0.273000 3.878000 4.151000 1 1
+resetn_placeOpt_2 uart/reg1_b13|uart/reg1_b5.sr
+
+
+
+
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  clk (100.000MHz)                              18.087ns      55.288MHz        0.380ns       632    -1560.441ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
+
