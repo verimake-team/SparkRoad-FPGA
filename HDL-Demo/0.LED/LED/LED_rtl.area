@@ -1,0 +1,9 @@
+standard
+IO Statistics
+#IO                     6
+  #input                3
+  #output               3
+  #inout                0
+#MACRO_ADD              2
+#MACRO_EQ               3
+#MACRO_MUX             15

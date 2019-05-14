@@ -1,0 +1,5 @@
+set_pin_assignment {CLK_IN} { LOCATION = P34;  } 
+set_pin_assignment {RST_N} { LOCATION = P16;  } 
+set_pin_assignment {RGB_LED[0]} { LOCATION = P23;  }	
+set_pin_assignment {RGB_LED[1]} { LOCATION = P19;  }	
+set_pin_assignment {RGB_LED[2]} { LOCATION = P17;  }	

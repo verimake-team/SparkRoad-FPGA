@@ -1,0 +1,37 @@
+standard
+IO Statistics
+#IO                     6
+  #input                3
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                   39   out of  19600    0.20%
+#reg                   30   out of  19600    0.15%
+#le                    56
+  #lut only            26   out of     56   46.43%
+  #reg only            17   out of     56   30.36%
+  #lut&reg             13   out of     56   23.21%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    6   out of    121    4.96%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+#clknet                 1   out of     16    6.25%
+  #gclk                 0
+
+
+Detailed IO Report
+
+Name           Direction     Location     IOStandard     DriveStrength     
+CLK_IN         INPUT         P34          LVCMOS25       N/A               
+RST_N          INPUT         P16          LVCMOS25       N/A               
+keyB           INPUT         P27          LVCMOS25       N/A               
+RGB_LED[2]     OUTPUT        P17          LVCMOS25       8                 
+RGB_LED[1]     OUTPUT        P19          LVCMOS25       8                 
+RGB_LED[0]     OUTPUT        P23          LVCMOS25       8                 
