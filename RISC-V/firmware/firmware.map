@@ -6,37 +6,39 @@ Name             Origin             Length             Attributes
 
 Linker script and memory map
 
-LOAD /tmp/ccOcdzyv.o
-LOAD /tmp/ccxNI0EO.o
+LOAD C:\Users\SALIER~1\AppData\Local\Temp\cc09IODv.o
+LOAD C:\Users\SALIER~1\AppData\Local\Temp\ccpWVEvL.o
 
-.memory         0x0000000000000000      0x58c
+.memory         0x0000000000000000      0x414
                 0x0000000000000004                . = 0x4
  *fill*         0x0000000000000000        0x4 
  *(.init)
- .init          0x0000000000000004       0x10 /tmp/ccOcdzyv.o
+ .init          0x0000000000000004        0xe C:\Users\SALIER~1\AppData\Local\Temp\cc09IODv.o
  *(.text)
- .text          0x0000000000000014        0x0 /tmp/ccOcdzyv.o
- .text          0x0000000000000014      0x4bc /tmp/ccxNI0EO.o
-                0x0000000000000014                putc
-                0x0000000000000064                getc
-                0x00000000000000b8                puts
-                0x0000000000000108                memcpy
-                0x000000000000016c                memcmp
-                0x00000000000001e4                print_version
-                0x0000000000000220                printhex
-                0x00000000000002c0                printcrlf
-                0x00000000000002f4                dump_memory
-                0x0000000000000460                main
+ .text          0x0000000000000012        0x0 C:\Users\SALIER~1\AppData\Local\Temp\cc09IODv.o
+ .text          0x0000000000000012      0x364 C:\Users\SALIER~1\AppData\Local\Temp\ccpWVEvL.o
+                0x0000000000000012                putc
+                0x0000000000000048                getc
+                0x0000000000000082                puts
+                0x00000000000000b8                memcpy
+                0x0000000000000104                memcmp
+                0x0000000000000160                print_version
+                0x0000000000000184                printhex
+                0x00000000000001fc                printcrlf
+                0x0000000000000216                dump_memory
+                0x000000000000031e                main
  *(*)
- .data          0x00000000000004d0        0x0 /tmp/ccOcdzyv.o
- .bss           0x00000000000004d0        0x0 /tmp/ccOcdzyv.o
- .data          0x00000000000004d0        0x0 /tmp/ccxNI0EO.o
- .bss           0x00000000000004d0        0x0 /tmp/ccxNI0EO.o
- .rodata        0x00000000000004d0       0xaa /tmp/ccxNI0EO.o
- .comment       0x000000000000057a       0x11 /tmp/ccxNI0EO.o
+ .data          0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\cc09IODv.o
+ .bss           0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\cc09IODv.o
+ .rela.init     0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\cc09IODv.o
+ .data          0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccpWVEvL.o
+ .bss           0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccpWVEvL.o
+ *fill*         0x0000000000000376        0x2 
+ .rodata        0x0000000000000378       0x8a C:\Users\SALIER~1\AppData\Local\Temp\ccpWVEvL.o
+ .comment       0x0000000000000402       0x11 C:\Users\SALIER~1\AppData\Local\Temp\ccpWVEvL.o
                                          0x12 (size before relaxing)
-                0x000000000000058c                . = ALIGN (0x4)
- *fill*         0x000000000000058b        0x1 
-                0x000000000000058c                end = .
-LOAD /opt/riscv32i/lib/gcc/riscv32-SparkRoad-elf/8.2.0/libgcc.a
+                0x0000000000000414                . = ALIGN (0x4)
+ *fill*         0x0000000000000413        0x1 
+                0x0000000000000414                end = .
+LOAD c:/program files (x86)/rv32imc/bin/../lib/gcc/riscv32-unknown-elf/6.1.0\libgcc.a
 OUTPUT(firmware.elf elf32-littleriscv)

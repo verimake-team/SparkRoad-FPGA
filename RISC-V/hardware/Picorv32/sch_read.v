@@ -1,5 +1,5 @@
 // Verilog netlist created by TD v4.3.815
-// Wed May  8 20:26:11 2019
+// Tue May 14 16:18:53 2019
 
 `timescale 1ns / 1ps
 module system  // ../src/top.v(3)
@@ -6164,7 +6164,7 @@ module add_pu64_pu64_o64
 
 endmodule 
 
-module regfile_dp  // C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-FPGA/RISC-V/hardware/Picorv32/al_ip/cpuregs.v(14)
+module regfile_dp  // al_ip/cpuregs.v(14)
   (
   di,
   raddr,
@@ -6174,12 +6174,12 @@ module regfile_dp  // C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-FPGA/
   do
   );
 
-  input [31:0] di;  // C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-FPGA/RISC-V/hardware/Picorv32/al_ip/cpuregs.v(23)
-  input [4:0] raddr;  // C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-FPGA/RISC-V/hardware/Picorv32/al_ip/cpuregs.v(25)
-  input [4:0] waddr;  // C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-FPGA/RISC-V/hardware/Picorv32/al_ip/cpuregs.v(24)
-  input wclk;  // C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-FPGA/RISC-V/hardware/Picorv32/al_ip/cpuregs.v(26)
-  input we;  // C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-FPGA/RISC-V/hardware/Picorv32/al_ip/cpuregs.v(26)
-  output [31:0] do;  // C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-FPGA/RISC-V/hardware/Picorv32/al_ip/cpuregs.v(28)
+  input [31:0] di;  // al_ip/cpuregs.v(23)
+  input [4:0] raddr;  // al_ip/cpuregs.v(25)
+  input [4:0] waddr;  // al_ip/cpuregs.v(24)
+  input wclk;  // al_ip/cpuregs.v(26)
+  input we;  // al_ip/cpuregs.v(26)
+  output [31:0] do;  // al_ip/cpuregs.v(28)
 
   parameter ADDR_WIDTH_R = 5;
   parameter ADDR_WIDTH_W = 5;
@@ -6202,7 +6202,7 @@ module regfile_dp  // C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-FPGA/
     .waddr(waddr),
     .wclk(wclk),
     .we(we),
-    .do(do));  // C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-FPGA/RISC-V/hardware/Picorv32/al_ip/cpuregs.v(40)
+    .do(do));  // al_ip/cpuregs.v(40)
 
 endmodule 
 

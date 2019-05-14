@@ -1,5 +1,5 @@
 // Verilog netlist created by TD v4.3.815
-// Wed May  8 20:26:13 2019
+// Tue May 14 16:18:55 2019
 
 `timescale 1ns / 1ps
 module system  // ../src/top.v(3)
@@ -3327,7 +3327,7 @@ module system  // ../src/top.v(3)
     .waddr(\picorv32_core/latched_rd ),
     .wclk(clk),
     .we(\picorv32_core/n456 ),
-    .do(\picorv32_core/cpuregs_rs1_z ));  // C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-FPGA/RISC-V/hardware/Picorv32/al_ip/cpuregs.v(40)
+    .do(\picorv32_core/cpuregs_rs1_z ));  // al_ip/cpuregs.v(40)
   EG_LOGIC_DRAM #(
     .ADDR_WIDTH_R(5),
     .ADDR_WIDTH_W(5),
@@ -3342,7 +3342,7 @@ module system  // ../src/top.v(3)
     .waddr(\picorv32_core/latched_rd ),
     .wclk(clk),
     .we(\picorv32_core/n456 ),
-    .do(\picorv32_core/cpuregs_rs2_z ));  // C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-FPGA/RISC-V/hardware/Picorv32/al_ip/cpuregs.v(40)
+    .do(\picorv32_core/cpuregs_rs2_z ));  // al_ip/cpuregs.v(40)
   reg_sr_as_w1 \picorv32_core/decoder_pseudo_trigger_reg  (
     .clk(clk),
     .d(\picorv32_core/n580 ),
