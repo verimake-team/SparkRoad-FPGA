@@ -54,9 +54,9 @@ char memcmp(void *s1, void *s2, int n)
 
 void print_version()
 {
-	puts("\r\nPicoRV32 (RV32IMC ISA) running on EG4\r\n");
-	puts("--- Jan.2017 Serial port demo v1\r\n");
-	puts("--- Anlogic Info Tech.(2011-2017)\r\n\r\n");
+	puts("\r\nPicoRV32 (RV32IMC ISA) running on SparkRoad(EG4S20NG88)\r\n");
+	puts("Apr.2019 Serial port\r\n");
+	puts("www.socchina.net\r\n\r\n");
 }
 
 void printhex(char i)
@@ -109,7 +109,7 @@ void main()
 	unsigned int num_cycles, num_instr;
 	volatile int i = 0; //输入指针
 	char a = 0;
-	UART_BSRR = 46; //16M晶振，波特率115200
+	UART_BSRR = 69; //24M晶振，波特率115200
 
 	input_entry[0] = 0; // for safe
 

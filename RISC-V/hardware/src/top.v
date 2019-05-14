@@ -20,19 +20,19 @@ module system (
 	wire [31:0] mem_addr;
 	wire [31:0] mem_wdata;
 	wire [3:0] mem_wstrb;
-	reg [31:0] mem_rdata;
+	reg [31:0] mem_rdata; 
 	wire mem_instr;
 	wire mem_valid;
 
 	wire mem_la_read;
-	wire mem_la_write;
+	wire mem_la_write; 
 	wire [31:0] mem_la_addr;
 	wire [31:0] mem_la_wdata;
 	wire [3:0] mem_la_wstrb;
 	
 	reg resetn = 0;
-	reg [1:0]initial_reset = 0;
-	
+	reg [1:0]initial_reset = 0; 
+	 
 	always @(posedge clk)
 	begin
 		resetn <= resetn_i && (initial_reset == 2'b11);
