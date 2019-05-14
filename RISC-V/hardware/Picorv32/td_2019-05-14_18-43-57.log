@@ -1,0 +1,42 @@
+============================================================
+   Tang Dynasty, V4.3.815
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/Anlogic/TD4.3.815/bin/td.exe
+   Built at =   18:48:55 Dec 28 2018
+   Run by =     SalieriNUC
+   Run Date =   Tue May 14 18:43:57 2019
+
+   Run on =     NUC8I7HVK
+============================================================
+RUN-1002 : start command "import_device eagle_s20.db -package QFN88"
+RUN-1002 : start command "open_project Picorv32.al"
+HDL-1007 : analyze verilog file ../src/picorv32.v
+HDL-5007 WARNING: empty statement in sequential block in ../src/picorv32.v(584)
+HDL-5007 WARNING: empty statement in sequential block in ../src/picorv32.v(592)
+HDL-5007 WARNING: empty statement in sequential block in ../src/picorv32.v(599)
+HDL-5007 WARNING: identifier 'mem_xfer' is used before its declaration in ../src/picorv32.v(327)
+HDL-1007 : analyze verilog file ../src/top.v
+ARC-1001 : Device Initialization.
+ARC-1001 : ---------------------------------------------------------------
+ARC-1001 :            OPTION            |        IO         |   SETTING   
+ARC-1001 : ---------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  P69/P82/P81/P80  |    gpio    
+ARC-1001 :             done             |        P8         |    gpio    
+ARC-1001 :           program_b          |        P67        |  dedicated  
+ARC-1001 :        tdi/tms/tck/tdo       |  P25/P22/P26/P21  |  dedicated  
+ARC-1001 : ---------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+HDL-1007 : analyze verilog file ../src/uart.v
+HDL-5007 WARNING: identifier 'uart_trigger_tx' is used before its declaration in ../src/uart.v(42)
+HDL-5007 WARNING: identifier 'uart_status_rx_clr' is used before its declaration in ../src/uart.v(50)
+HDL-5007 WARNING: identifier 'uart_status_rx_clr' is used before its declaration in ../src/uart.v(74)
+HDL-5007 WARNING: identifier 'uart_status_rx_clr' is used before its declaration in ../src/uart.v(88)
+HDL-1007 : analyze verilog file al_ip/mem_ml.v
+HDL-1007 : analyze verilog file al_ip/mem_lo.v
+HDL-1007 : analyze verilog file al_ip/mem_mh.v
+HDL-1007 : analyze verilog file al_ip/mem_hi.v
+HDL-1007 : analyze verilog file al_ip/cpuregs.v
+RUN-1003 : finish command "import_device eagle_s20.db -package QFN88" in  2.996398s wall, 3.062500s user + 0.218750s system = 3.281250s CPU (109.5%)
+
+RUN-1004 : used memory is 157 MB, reserved memory is 135 MB, peak memory is 157 MB
