@@ -6,17 +6,17 @@ Name             Origin             Length             Attributes
 
 Linker script and memory map
 
-LOAD C:\Users\SALIER~1\AppData\Local\Temp\cc09IODv.o
-LOAD C:\Users\SALIER~1\AppData\Local\Temp\ccpWVEvL.o
+LOAD C:\Users\SALIER~1\AppData\Local\Temp\ccS0viCQ.o
+LOAD C:\Users\SALIER~1\AppData\Local\Temp\ccusPqZe.o
 
 .memory         0x0000000000000000      0x414
                 0x0000000000000004                . = 0x4
  *fill*         0x0000000000000000        0x4 
  *(.init)
- .init          0x0000000000000004        0xe C:\Users\SALIER~1\AppData\Local\Temp\cc09IODv.o
+ .init          0x0000000000000004        0xe C:\Users\SALIER~1\AppData\Local\Temp\ccS0viCQ.o
  *(.text)
- .text          0x0000000000000012        0x0 C:\Users\SALIER~1\AppData\Local\Temp\cc09IODv.o
- .text          0x0000000000000012      0x364 C:\Users\SALIER~1\AppData\Local\Temp\ccpWVEvL.o
+ .text          0x0000000000000012        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccS0viCQ.o
+ .text          0x0000000000000012      0x364 C:\Users\SALIER~1\AppData\Local\Temp\ccusPqZe.o
                 0x0000000000000012                putc
                 0x0000000000000048                getc
                 0x0000000000000082                puts
@@ -28,14 +28,14 @@ LOAD C:\Users\SALIER~1\AppData\Local\Temp\ccpWVEvL.o
                 0x0000000000000216                dump_memory
                 0x000000000000031e                main
  *(*)
- .data          0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\cc09IODv.o
- .bss           0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\cc09IODv.o
- .rela.init     0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\cc09IODv.o
- .data          0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccpWVEvL.o
- .bss           0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccpWVEvL.o
+ .data          0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccS0viCQ.o
+ .bss           0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccS0viCQ.o
+ .rela.init     0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccS0viCQ.o
+ .data          0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccusPqZe.o
+ .bss           0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccusPqZe.o
  *fill*         0x0000000000000376        0x2 
- .rodata        0x0000000000000378       0x8a C:\Users\SALIER~1\AppData\Local\Temp\ccpWVEvL.o
- .comment       0x0000000000000402       0x11 C:\Users\SALIER~1\AppData\Local\Temp\ccpWVEvL.o
+ .rodata        0x0000000000000378       0x8a C:\Users\SALIER~1\AppData\Local\Temp\ccusPqZe.o
+ .comment       0x0000000000000402       0x11 C:\Users\SALIER~1\AppData\Local\Temp\ccusPqZe.o
                                          0x12 (size before relaxing)
                 0x0000000000000414                . = ALIGN (0x4)
  *fill*         0x0000000000000413        0x1 
