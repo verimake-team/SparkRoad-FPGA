@@ -3,14 +3,14 @@
   It is compatible with the micro:bit and is a perfect fit for breadboards.
   The heart of the SparkRoad board is a EG4S20NG88 FPGA from Anlogic.
   
-## Quickstart
+# Quickstart
 
 	git clone https://github.com/verimake-team/SparkRoad-FPGA.git
 	cd SparkRoad-FPGA
 	
 If you have compiled a complete [toolchain for riscv](https://github.com/riscv/riscv-tools) 
 Please skip the following commands.	
-### Ubuntu 16.4:	
+## build the toolchain on ubuntu 16.4:	
 For well-known reasons, we provide a mirror of toolchain for a pure `rv32i` here。
 
 	链接：https://pan.baidu.com/s/160Iu03p4NvlcNUw18_msDQ 
@@ -38,5 +38,5 @@ You can input the following at the end of profile use `vi /etc/profile` .
 	
 Then log out and reload your ubuntu.
 
-### Windows10:
+## build the toolchain on windows10:
 Just install `risc-v-toolchain.exe` which provide by Anlogic. Then export PATH. 
