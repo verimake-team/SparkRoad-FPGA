@@ -10,7 +10,7 @@
 	
 If you have compiled a complete [toolchain for riscv](https://github.com/riscv/riscv-tools) 
 Please skip the following commands.	
-###Ubuntu 16.4:	
+### Ubuntu 16.4:	
 For well-known reasons, we provide a mirror of toolchain for a pure `rv32i` here。
 
 	链接：https://pan.baidu.com/s/160Iu03p4NvlcNUw18_msDQ 
@@ -38,5 +38,5 @@ You can input the following at the end of profile use `vi /etc/profile` .
 	
 Then log out and reload your ubuntu.
 
-###Windows10:
+### Windows10:
 Just install `risc-v-toolchain.exe` which provide by Anlogic. Then export PATH. 
