@@ -3,19 +3,19 @@
   It is compatible with the micro:bit and is a perfect fit for breadboards.
   The heart of the SparkRoad board is a EG4S20NG88 FPGA from Anlogic.
   
-## start with sparkroad
-Ubuntu 16.4:
+## Quickstart
 
 	git clone https://github.com/verimake-team/SparkRoad-FPGA.git
 	cd SparkRoad-FPGA
 	
+If you have compiled a complete [toolchain for riscv](https://github.com/riscv/riscv-tools) 
+Please skip the following commands.	
+###Ubuntu 16.4:	
 For well-known reasons, we provide a mirror of toolchain for a pure `rv32i` here。
 
 	链接：https://pan.baidu.com/s/160Iu03p4NvlcNUw18_msDQ 
 	提取码：fv59 
 
-If you have compiled a complete [toolchain for riscv](https://github.com/riscv/riscv-tools) 
-Please skip the following commands.	
 Make sure the mirror above is in the directory `/SparkRoad-FPGA`.Then the following commands will build the 
 RISC-V GNU toolchain and libraries for a pure RV32I target, and install it in `/opt/riscv32i`:
 
@@ -30,9 +30,13 @@ RISC-V GNU toolchain and libraries for a pure RV32I target, and install it in `/
 	cd ../../RISC-V/firmware
 	gcc -Wall rom2mif.c -o rom2mif
 	sudo mv rom2mif /opt/riscv32i/bin
+	
 ## export PATH
 You can input the following at the end of profile use `vi /etc/profile` .
 	
 	export PATH="$PATH:/opt/riscv32i/bin"
 	
 Then log out and reload your ubuntu.
+
+###Windows10:
+Just install `risc-v-toolchain.exe` which provide by Anlogic. Then export PATH. 
