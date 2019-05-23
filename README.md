@@ -39,4 +39,4 @@ You can input the following at the end of profile use `vi /etc/profile` .
 Then log out and reload your ubuntu.
 
 ## build the toolchain on windows10:
-Just install `risc-v-toolchain.exe` which provide by Anlogic. Then export PATH.    
+Just install `risc-v-toolchain.exe` which provide by Anlogic. Then export PATH.       
